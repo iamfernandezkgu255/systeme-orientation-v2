@@ -38,7 +38,7 @@ orientation_benin_v2/
 
 ```bash
 # Cloner ou télécharger le projet
-git clone <url_du_projet>
+git clone https://github.com/iamfernandezkgu255/systeme-orientation-v2.git
 cd orientation_benin_v2
 
 # Installer les dépendances
