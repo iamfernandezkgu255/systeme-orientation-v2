@@ -1,1079 +1,951 @@
 {
-  "metiers": [],
-  "secteurs_porteurs": [],
-  "competences": [],
-  "formations_generales": [],
+  "version": "2.1",
+  "source": "Guide Officiel d'Orientation Universitaire 2024-2025 - Ministère de l'Enseignement Supérieur et de la Recherche Scientifique du Bénin",
+  "plateforme_officielle": "https://apresmonbac.bj",
+  "ministere_contact": {
+    "adresse": "01 BP 348 Cotonou",
+    "telephone": "21 30 53 93",
+    "email": "contact.mesrs@gouv.bj",
+    "site_web": "www.enseignementsuperieur.gouv.bj"
+  },
+  "metiers": [
+    {
+      "nom_metier": "Médecin",
+      "description": "Professionnel de santé qui diagnostique et traite les maladies",
+      "secteur_activite": "Santé",
+      "competences_requises_techniques": ["Anatomie", "Physiologie", "Pharmacologie", "Diagnostique médical", "Chirurgie"],
+      "competences_requises_transversales": ["Communication", "Empathie", "Gestion du stress", "Éthique professionnelle"],
+      "formations_typiques_generales": ["Doctorat en Médecine"],
+      "niveau_demande_marche": "Très élevé",
+      "perspectives_croissance": true,
+      "pertinence_realites_africaines_benin": "Très pertinent - Demande croissante en santé publique"
+    },
+    {
+      "nom_metier": "Agent de santé communautaire",
+      "description": "Professionnel de santé publique intervenant au niveau communautaire",
+      "secteur_activite": "Santé",
+      "competences_requises_techniques": ["Santé publique", "Épidémiologie", "Soins de base", "Prévention"],
+      "competences_requises_transversales": ["Communication", "Travail d'équipe", "Sensibilisation"],
+      "formations_typiques_generales": ["Licence en Santé publique polyvalente"],
+      "niveau_demande_marche": "Très élevé",
+      "perspectives_croissance": true,
+      "pertinence_realites_africaines_benin": "Extrêmement pertinent - Système de santé communautaire prioritaire"
+    },
+    {
+      "nom_metier": "Infirmier",
+      "description": "Professionnel de santé qui prodigue des soins aux patients",
+      "secteur_activite": "Santé",
+      "competences_requises_techniques": ["Soins infirmiers", "Administration médicaments", "Premiers secours", "Hygiène hospitalière"],
+      "competences_requises_transversales": ["Communication", "Compassion", "Organisation", "Travail d'équipe"],
+      "formations_typiques_generales": ["Sciences Infirmières", "Licence en Sciences Infirmières"],
+      "niveau_demande_marche": "Élevé",
+      "perspectives_croissance": true,
+      "pertinence_realites_africaines_benin": "Très pertinent - Besoin urgent dans le système de santé"
+    },
+    {
+      "nom_metier": "Sage-femme",
+      "description": "Professionnelle spécialisée dans l'accompagnement de la grossesse et de l'accouchement",
+      "secteur_activite": "Santé",
+      "competences_requises_techniques": ["Obstétrique", "Soins périnataux", "Urgences obstétricales", "Consultation prénatale"],
+      "competences_requises_transversales": ["Empathie", "Gestion du stress", "Communication", "Réactivité"],
+      "formations_typiques_generales": ["Sciences Obstétricales"],
+      "niveau_demande_marche": "Très élevé",
+      "perspectives_croissance": true,
+      "pertinence_realites_africaines_benin": "Extrêmement pertinent - Réduction mortalité maternelle prioritaire"
+    },
+    {
+      "nom_metier": "Hydrologue",
+      "description": "Spécialiste de l'étude de l'eau dans l'environnement",
+      "secteur_activite": "Eau et Environnement",
+      "competences_requises_techniques": ["Hydrologie", "Modélisation hydraulique", "Chimie des eaux", "Géomatique"],
+      "competences_requises_transversales": ["Analyse", "Recherche", "Communication", "Travail de terrain"],
+      "formations_typiques_generales": ["Hydrologie quantitative", "Gestion intégrée des ressources en eau"],
+      "niveau_demande_marche": "Très élevé",
+      "perspectives_croissance": true,
+      "pertinence_realites_africaines_benin": "Extrêmement pertinent - Gestion des ressources en eau cruciale"
+    },
+    {
+      "nom_metier": "Hydrogéologue",
+      "description": "Spécialiste des eaux souterraines",
+      "secteur_activite": "Eau et Environnement",
+      "competences_requises_techniques": ["Hydrogéologie", "Géophysique", "Modélisation", "Forage"],
+      "competences_requises_transversales": ["Analyse", "Résolution de problèmes", "Communication technique"],
+      "formations_typiques_generales": ["Hydrogéologie", "Hydrogéophysique"],
+      "niveau_demande_marche": "Très élevé",
+      "perspectives_croissance": true,
+      "pertinence_realites_africaines_benin": "Extrêmement pertinent - Accès à l'eau potable priorité nationale"
+    },
+    {
+      "nom_metier": "Développeur d'applications",
+      "description": "Professionnel qui conçoit et développe des applications informatiques",
+      "secteur_activite": "Technologies",
+      "competences_requises_techniques": ["Programmation", "Base de données", "Interface utilisateur", "Tests logiciels"],
+      "competences_requises_transversales": ["Logique", "Créativité", "Travail d'équipe", "Veille technologique"],
+      "formations_typiques_generales": ["Développement", "Programmation", "Analyse Informatique et Programmation"],
+      "niveau_demande_marche": "Très élevé",
+      "perspectives_croissance": true,
+      "pertinence_realites_africaines_benin": "Très pertinent - Transformation numérique en cours"
+    },
+    {
+      "nom_metier": "Data Analyst",
+      "description": "Spécialiste de l'analyse de données massives",
+      "secteur_activite": "Technologies",
+      "competences_requises_techniques": ["Analyse de données", "Statistiques", "Machine Learning", "Visualisation"],
+      "competences_requises_transversales": ["Analyse", "Communication", "Résolution de problèmes"],
+      "formations_typiques_generales": ["Intelligence Artificielle", "Statistique économique"],
+      "niveau_demande_marche": "Très élevé",
+      "perspectives_croissance": true,
+      "pertinence_realites_africaines_benin": "Très pertinent - Métier émergent à forte demande"
+    },
+    {
+      "nom_metier": "Spécialiste en cybersécurité",
+      "description": "Expert en sécurité des systèmes informatiques",
+      "secteur_activite": "Technologies",
+      "competences_requises_techniques": ["Sécurité informatique", "Cryptographie", "Réseaux", "Audit sécurité"],
+      "competences_requises_transversales": ["Vigilance", "Analyse", "Résolution de problèmes", "Formation"],
+      "formations_typiques_generales": ["Sécurité Informatique", "Systèmes et Réseaux"],
+      "niveau_demande_marche": "Très élevé",
+      "perspectives_croissance": true,
+      "pertinence_realites_africaines_benin": "Très pertinent - Sécurisation de la transformation numérique"
+    },
+    {
+      "nom_metier": "Ingénieur en Intelligence Artificielle",
+      "description": "Spécialiste du développement de solutions d'IA",
+      "secteur_activite": "Technologies",
+      "competences_requises_techniques": ["Intelligence Artificielle", "Machine Learning", "Deep Learning", "Python"],
+      "competences_requises_transversales": ["Innovation", "Recherche", "Analyse", "Communication"],
+      "formations_typiques_generales": ["Intelligence Artificielle"],
+      "niveau_demande_marche": "Très élevé",
+      "perspectives_croissance": true,
+      "pertinence_realites_africaines_benin": "Très pertinent - Innovation technologique prioritaire"
+    },
+    {
+      "nom_metier": "Community Manager",
+      "description": "Gestionnaire de communautés numériques et réseaux sociaux",
+      "secteur_activite": "Marketing Digital",
+      "competences_requises_techniques": ["Marketing digital", "Réseaux sociaux", "Content marketing", "Analytics"],
+      "competences_requises_transversales": ["Communication", "Créativité", "Réactivité", "Relation client"],
+      "formations_typiques_generales": ["Marketing Digital et Community Management"],
+      "niveau_demande_marche": "Élevé",
+      "perspectives_croissance": true,
+      "pertinence_realites_africaines_benin": "Pertinent - Développement du marketing digital"
+    },
+    {
+      "nom_metier": "Responsable e-commerce",
+      "description": "Gestionnaire de plateformes de commerce électronique",
+      "secteur_activite": "Commerce Digital",
+      "competences_requises_techniques": ["E-commerce", "Web marketing", "Analytics", "UX/UI"],
+      "competences_requises_transversales": ["Gestion de projet", "Analyse", "Communication", "Innovation"],
+      "formations_typiques_generales": ["Marketing Digital", "Commerce"],
+      "niveau_demande_marche": "Élevé",
+      "perspectives_croissance": true,
+      "pertinence_realites_africaines_benin": "Pertinent - Croissance du commerce électronique"
+    },
+    {
+      "nom_metier": "Ingénieur Agricole",
+      "description": "Professionnel qui optimise la production agricole",
+      "secteur_activite": "Agriculture",
+      "competences_requises_techniques": ["Agronomie", "Techniques culturales", "Mécanisation", "Gestion des sols"],
+      "competences_requises_transversales": ["Innovation", "Adaptabilité", "Communication", "Gestion de projet"],
+      "formations_typiques_generales": ["Sciences et Techniques de Production Végétale", "Sciences et Techniques de Production Animale"],
+      "niveau_demande_marche": "Très élevé",
+      "perspectives_croissance": true,
+      "pertinence_realites_africaines_benin": "Extrêmement pertinent - Économie basée sur l'agriculture"
+    },
+    {
+      "nom_metier": "Zootechnicien",
+      "description": "Spécialiste de l'élevage et de la production animale",
+      "secteur_activite": "Agriculture",
+      "competences_requises_techniques": ["Zootechnie", "Alimentation animale", "Reproduction", "Santé animale"],
+      "competences_requises_transversales": ["Observation", "Gestion", "Communication", "Innovation"],
+      "formations_typiques_generales": ["Zootechnie", "Sciences et Techniques de Production Animale"],
+      "niveau_demande_marche": "Élevé",
+      "perspectives_croissance": true,
+      "pertinence_realites_africaines_benin": "Très pertinent - Développement de l'élevage"
+    },
+    {
+      "nom_metier": "Gestionnaire forestier",
+      "description": "Spécialiste de la gestion et conservation des forêts",
+      "secteur_activite": "Environnement",
+      "competences_requises_techniques": ["Foresterie", "Aménagement forestier", "Conservation", "Biodiversité"],
+      "competences_requises_transversales": ["Écologie", "Gestion", "Communication", "Sensibilisation"],
+      "formations_typiques_generales": ["Aménagement et Gestion des Forêts et Parcours Naturels"],
+      "niveau_demande_marche": "Élevé",
+      "perspectives_croissance": true,
+      "pertinence_realites_africaines_benin": "Très pertinent - Protection des écosystèmes forestiers"
+    },
+    {
+      "nom_metier": "Enseignant",
+      "description": "Professionnel de l'éducation qui transmet les connaissances",
+      "secteur_activite": "Education",
+      "competences_requises_techniques": ["Pédagogie", "Maîtrise disciplinaire", "Évaluation", "Technologies éducatives"],
+      "competences_requises_transversales": ["Communication", "Patience", "Créativité", "Leadership"],
+      "formations_typiques_generales": ["Formation d'Enseignants", "Lettres Modernes", "Anglais", "Allemand", "Espagnol"],
+      "niveau_demande_marche": "Élevé",
+      "perspectives_croissance": true,
+      "pertinence_realites_africaines_benin": "Très pertinent - Besoin en éducation de qualité"
+    },
+    {
+      "nom_metier": "Comptable",
+      "description": "Professionnel qui gère la comptabilité d'une organisation",
+      "secteur_activite": "Finance",
+      "competences_requises_techniques": ["Comptabilité générale", "Fiscalité", "Audit", "Logiciels comptables"],
+      "competences_requises_transversales": ["Rigueur", "Analyse", "Confidentialité", "Organisation"],
+      "formations_typiques_generales": ["Comptabilité", "Gestion Financière et Comptable"],
+      "niveau_demande_marche": "Élevé",
+      "perspectives_croissance": true,
+      "pertinence_realites_africaines_benin": "Très pertinent - Développement économique"
+    },
+    {
+      "nom_metier": "Banquier",
+      "description": "Professionnel des services bancaires et financiers",
+      "secteur_activite": "Finance",
+      "competences_requises_techniques": ["Services bancaires", "Analyse financière", "Crédit", "Produits financiers"],
+      "competences_requises_transversales": ["Relation client", "Communication", "Éthique", "Négociation"],
+      "formations_typiques_generales": ["Banque et Finance de Marché", "Banque et Institutions des Micro-finances"],
+      "niveau_demande_marche": "Élevé",
+      "perspectives_croissance": true,
+      "pertinence_realites_africaines_benin": "Très pertinent - Inclusion financière et microfinance"
+    },
+    {
+      "nom_metier": "Gestionnaire logistique",
+      "description": "Spécialiste de l'organisation des flux de marchandises et transports",
+      "secteur_activite": "Transport et Logistique",
+      "competences_requises_techniques": ["Logistique", "Supply chain", "Transport", "Optimisation"],
+      "competences_requises_transversales": ["Organisation", "Coordination", "Communication", "Gestion de projet"],
+      "formations_typiques_generales": ["Gestion des Transports", "Logistique"],
+      "niveau_demande_marche": "Élevé",
+      "perspectives_croissance": true,
+      "pertinence_realites_africaines_benin": "Pertinent - Hub logistique sous-régional"
+    },
+    {
+      "nom_metier": "Gestionnaire du patrimoine culturel",
+      "description": "Professionnel de la préservation et valorisation du patrimoine",
+      "secteur_activite": "Culture",
+      "competences_requises_techniques": ["Patrimoine culturel", "Conservation", "Muséologie", "Législation culturelle"],
+      "competences_requises_transversales": ["Culture", "Communication", "Organisation", "Sensibilisation"],
+      "formations_typiques_generales": ["Gestion du patrimoine culturel", "Administration culturelle"],
+      "niveau_demande_marche": "Moyen",
+      "perspectives_croissance": true,
+      "pertinence_realites_africaines_benin": "Très pertinent - Valorisation du riche patrimoine béninois"
+    },
+    {
+      "nom_metier": "Comédien",
+      "description": "Artiste professionnel du spectacle dramatique",
+      "secteur_activite": "Arts et Culture",
+      "competences_requises_techniques": ["Art dramatique", "Expression corporelle", "Improvisation", "Interprétation"],
+      "competences_requises_transversales": ["Créativité", "Expression", "Confiance", "Adaptabilité"],
+      "formations_typiques_generales": ["Arts dramatiques"],
+      "niveau_demande_marche": "Moyen",
+      "perspectives_croissance": true,
+      "pertinence_realites_africaines_benin": "Pertinent - Industries créatives en développement"
+    },
+    {
+      "nom_metier": "Technicien audiovisuel",
+      "description": "Spécialiste technique de la production audiovisuelle",
+      "secteur_activite": "Arts et Culture",
+      "competences_requises_techniques": ["Production audiovisuelle", "Montage", "Éclairage", "Son"],
+      "competences_requises_transversales": ["Technique", "Créativité", "Travail d'équipe", "Précision"],
+      "formations_typiques_generales": ["Cinéma et Audiovisuel"],
+      "niveau_demande_marche": "Moyen",
+      "perspectives_croissance": true,
+      "pertinence_realites_africaines_benin": "Pertinent - Développement de l'industrie audiovisuelle"
+    },
+    {
+      "nom_metier": "Digital Marketing Manager",
+      "description": "Gestionnaire de stratégies marketing digital et e-commerce",
+      "secteur_activite": "Marketing Digital",
+      "competences_requises_techniques": ["Marketing digital", "Analytics", "SEO/SEM", "E-commerce"],
+      "competences_requises_transversales": ["Stratégie", "Analyse", "Créativité", "Leadership"],
+      "formations_typiques_generales": ["Marketing Digital et Community Management"],
+      "niveau_demande_marche": "Très élevé",
+      "perspectives_croissance": true,
+      "pertinence_realites_africaines_benin": "Très pertinent - Transformation digitale des entreprises"
+    },
+    {
+      "nom_metier": "Architecte de données",
+      "description": "Spécialiste de l'architecture et gestion des données massives",
+      "secteur_activite": "Technologies",
+      "competences_requises_techniques": ["Big Data", "Base de données", "Cloud", "Architecture logicielle"],
+      "competences_requises_transversales": ["Analyse", "Vision systémique", "Innovation", "Communication"],
+      "formations_typiques_generales": ["Intelligence Artificielle", "Analyse Informatique et Programmation"],
+      "niveau_demande_marche": "Très élevé",
+      "perspectives_croissance": true,
+      "pertinence_realites_africaines_benin": "Très pertinent - Métier d'avenir"
+    },
+    {
+      "nom_metier": "Spécialiste IoT",
+      "description": "Expert en Internet des Objets et systèmes connectés",
+      "secteur_activite": "Technologies",
+      "competences_requises_techniques": ["IoT", "Systèmes embarqués", "Réseaux", "Capteurs"],
+      "competences_requises_transversales": ["Innovation", "Résolution de problèmes", "Travail d'équipe"],
+      "formations_typiques_generales": ["Systèmes embarqués et Internet des Objets"],
+      "niveau_demande_marche": "Élevé",
+      "perspectives_croissance": true,
+      "pertinence_realites_africaines_benin": "Pertinent - Smart cities et agriculture connectée"
+    },
+    {
+      "nom_metier": "Écohydrologue",
+      "description": "Spécialiste de l'écologie des milieux aquatiques",
+      "secteur_activite": "Eau et Environnement",
+      "competences_requises_techniques": ["Écologie aquatique", "Hydrologie", "Biodiversité", "Qualité de l'eau"],
+      "competences_requises_transversales": ["Recherche", "Observation", "Communication", "Conservation"],
+      "formations_typiques_generales": ["Ecohydrologie"],
+      "niveau_demande_marche": "Élevé",
+      "perspectives_croissance": true,
+      "pertinence_realites_africaines_benin": "Très pertinent - Protection des écosystèmes aquatiques"
+    },
+    {
+      "nom_metier": "Hydrogéophysicien",
+      "description": "Expert en géophysique appliquée aux ressources en eau",
+      "secteur_activite": "Eau et Environnement",
+      "competences_requises_techniques": ["Géophysique", "Hydrogéologie", "Prospection", "Modélisation"],
+      "competences_requises_transversales": ["Analyse", "Recherche", "Terrain", "Communication technique"],
+      "formations_typiques_generales": ["Hydrogéologie", "Hydrogéophysique"],
+      "niveau_demande_marche": "Élevé",
+      "perspectives_croissance": true,
+      "pertinence_realites_africaines_benin": "Très pertinent - Prospection d'eau souterraine"
+    },
+    {
+      "nom_metier": "Spécialiste en géomatique",
+      "description": "Expert en systèmes d'information géographique et cartographie",
+      "secteur_activite": "Environnement",
+      "competences_requises_techniques": ["SIG", "Télédétection", "Cartographie", "GPS"],
+      "competences_requises_transversales": ["Analyse spatiale", "Communication", "Précision", "Technologie"],
+      "formations_typiques_generales": ["Géomatique et Environnement"],
+      "niveau_demande_marche": "Élevé",
+      "perspectives_croissance": true,
+      "pertinence_realites_africaines_benin": "Très pertinent - Aménagement du territoire et urbanisme"
+    },
+    {
+      "nom_metier": "Avocat",
+      "description": "Professionnel du droit qui défend et conseille juridiquement",
+      "secteur_activite": "Juridique",
+      "competences_requises_techniques": ["Droit civil", "Droit pénal", "Procédures", "Rédaction juridique"],
+      "competences_requises_transversales": ["Éloquence", "Analyse", "Négociation", "Éthique"],
+      "formations_typiques_generales": ["Master en Droit"],
+      "niveau_demande_marche": "Moyen",
+      "perspectives_croissance": true,
+      "pertinence_realites_africaines_benin": "Pertinent - État de droit en développement"
+    }
+  ],
+  "secteurs_porteurs": [
+    {
+      "nom_secteur": "Santé",
+      "description": "Secteur des soins de santé et services médicaux prioritaire pour le développement",
+      "croissance_prevue": "Très forte",
+      "metiers_cles": ["Médecin", "Infirmier", "Sage-femme", "Agent de santé communautaire", "Responsable de surveillance épidémiologique", "Attaché de recherche en santé"]
+    },
+    {
+      "nom_secteur": "Eau et Assainissement",
+      "description": "Secteur prioritaire pour la gestion des ressources en eau et l'adaptation climatique",
+      "croissance_prevue": "Très forte",
+      "metiers_cles": ["Hydrologue", "Hydrogéologue", "Chimiste des eaux", "Ecohydrologue", "Contrôleur des travaux d'assainissement", "Agent d'hygiène et d'assainissement"]
+    },
+    {
+      "nom_secteur": "Technologies numériques",
+      "description": "Secteur de l'informatique, IA et transformation digitale en forte expansion",
+      "croissance_prevue": "Très forte",
+      "metiers_cles": ["Développeur d'applications", "Data Analyst", "Spécialiste en cybersécurité", "Ingénieur en Intelligence Artificielle", "Architecte de données"]
+    },
+    {
+      "nom_secteur": "Agriculture et Agroécologie",
+      "description": "Secteur fondamental de l'économie béninoise avec modernisation nécessaire",
+      "croissance_prevue": "Forte",
+      "metiers_cles": ["Ingénieur Agricole", "Zootechnicien", "Gestionnaire forestier", "Entrepreneur agricole", "Contrôleur qualité cultures"]
+    },
+    {
+      "nom_secteur": "Marketing Digital et E-commerce",
+      "description": "Secteur émergent lié à la transformation digitale de l'économie",
+      "croissance_prevue": "Très forte",
+      "metiers_cles": ["Community Manager", "Responsable e-commerce", "Digital Marketing Manager", "Chef de projet web", "Social Media Manager"]
+    },
+    {
+      "nom_secteur": "Finance et Microfinance",
+      "description": "Secteur bancaire et financier avec focus sur l'inclusion financière",
+      "croissance_prevue": "Forte",
+      "metiers_cles": ["Banquier", "Comptable", "Analyste financier", "Gestionnaire de patrimoine", "Spécialiste microfinance"]
+    },
+    {
+      "nom_secteur": "Éducation",
+      "description": "Secteur de l'éducation et de la formation avec besoins importants",
+      "croissance_prevue": "Forte",
+      "metiers_cles": ["Enseignant", "Formateur", "Directeur d'établissement", "Conseiller pédagogique", "Concepteur de contenus éducatifs"]
+    },
+    {
+      "nom_secteur": "Environnement et Changement Climatique",
+      "description": "Secteur crucial pour l'adaptation et l'atténuation du changement climatique",
+      "croissance_prevue": "Forte",
+      "metiers_cles": ["Spécialiste en géomatique", "Gestionnaire forestier", "Inspecteur environnemental", "Gestionnaire des changements climatiques"]
+    },
+    {
+      "nom_secteur": "Culture et Industries Créatives",
+      "description": "Secteur de valorisation du patrimoine et des industries culturelles",
+      "croissance_prevue": "Moyenne",
+      "metiers_cles": ["Gestionnaire du patrimoine culturel", "Comédien", "Technicien audiovisuel", "Conservateur de musée", "Médiateur culturel"]
+    },
+    {
+      "nom_secteur": "Transport et Logistique",
+      "description": "Secteur important pour le positionnement du Bénin comme hub logistique",
+      "croissance_prevue": "Forte",
+      "metiers_cles": ["Gestionnaire logistique", "Planificateur transport", "Responsable supply chain", "Gestionnaire de port"]
+    }
+  ],
+  "competences": [
+    {
+      "nom_competence": "Communication",
+      "description": "Capacité à communiquer efficacement à l'oral et à l'écrit",
+      "type_competence": "Transversale"
+    },
+    {
+      "nom_competence": "Analyse de données",
+      "description": "Capacité à collecter, traiter et interpréter des données",
+      "type_competence": "Technique"
+    },
+    {
+      "nom_competence": "Intelligence Artificielle",
+      "description": "Maîtrise des techniques d'IA et machine learning",
+      "type_competence": "Technique"
+    },
+    {
+      "nom_competence": "Programmation",
+      "description": "Maîtrise des langages de programmation informatique",
+      "type_competence": "Technique"
+    },
+    {
+      "nom_competence": "Leadership",
+      "description": "Capacité à diriger et motiver une équipe",
+      "type_competence": "Transversale"
+    },
+    {
+      "nom_competence": "Marketing Digital",
+      "description": "Maîtrise des outils et stratégies de marketing numérique",
+      "type_competence": "Technique"
+    },
+    {
+      "nom_competence": "Gestion de projet",
+      "description": "Capacité à planifier, organiser et mener des projets",
+      "type_competence": "Transversale"
+    },
+    {
+      "nom_competence": "Hydrologie",
+      "description": "Connaissance des sciences de l'eau et de l'hydrologie",
+      "type_competence": "Technique"
+    },
+    {
+      "nom_competence": "Santé publique",
+      "description": "Compétences en épidémiologie et santé communautaire",
+      "type_competence": "Technique"
+    },
+    {
+      "nom_competence": "Agronomie",
+      "description": "Sciences et techniques de la production agricole",
+      "type_competence": "Technique"
+    }
+  ],
+  "formations_generales": [
+    {
+      "nom_formation_generale": "Doctorat en Médecine",
+      "description": "Formation médicale complète de 7 ans",
+      "metiers_prepares": ["Médecin", "Chirurgien", "Spécialiste médical"],
+      "type": "Universitaire"
+    },
+    {
+      "nom_formation_generale": "Licence en Santé publique",
+      "description": "Formation en santé publique et épidémiologie",
+      "metiers_prepares": ["Agent de santé communautaire", "Responsable de surveillance épidémiologique"],
+      "type": "Universitaire"
+    },
+    {
+      "nom_formation_generale": "Sciences Infirmières",
+      "description": "Formation en soins infirmiers",
+      "metiers_prepares": ["Infirmier", "Infirmier spécialisé"],
+      "type": "Universitaire"
+    },
+    {
+      "nom_formation_generale": "Intelligence Artificielle",
+      "description": "Formation spécialisée en IA et machine learning",
+      "metiers_prepares": ["Ingénieur IA", "Data Scientist", "Développeur IA"],
+      "type": "Universitaire"
+    },
+    {
+      "nom_formation_generale": "Hydrologie",
+      "description": "Formation en sciences de l'eau",
+      "metiers_prepares": ["Hydrologue", "Hydrogéologue", "Gestionnaire des ressources en eau"],
+      "type": "Universitaire"
+    },
+    {
+      "nom_formation_generale": "Sciences Agronomiques",
+      "description": "Formation en agriculture et production",
+      "metiers_prepares": ["Ingénieur Agricole", "Agronome", "Zootechnicien"],
+      "type": "Universitaire"
+    },
+    {
+      "nom_formation_generale": "Marketing Digital",
+      "description": "Formation en marketing numérique et e-commerce",
+      "metiers_prepares": ["Community Manager", "Responsable e-commerce", "Digital Marketing Manager"],
+      "type": "Universitaire"
+    }
+  ],
   "universites": [
     {
       "nom_universite": "Université d'Abomey-Calavi",
       "sigle": "UAC",
       "statut": "Public",
       "localisation": "Abomey-Calavi, avec des campus dans plusieurs villes (Cotonou, Abomey-Calavi, Allada)",
-      "site_web": "",
+      "site_web": "https://www.uac.bj",
       "facultes_ecoles": [
         {
-          "nom_faculte_ecole": "Faculté des Sciences et Techniques (FAST)",
+          "nom_faculte_ecole": "Institut Régional de Santé Publique (IRSP)",
+          "description": "Formation spécialisée en santé publique et épidémiologie",
           "filieres": [
             {
-              "nom_filiere": "Biotechnologie",
-              "description_filiere": "",
-              "diplome_delivre": "Licence Professionnelle, Master",
+              "nom_filiere": "Santé publique polyvalente",
+              "description_filiere": "Formation pluridisciplinaire en santé publique",
+              "diplome_delivre": "Licence en Santé Publique",
               "duree_etudes_ans": 3,
-              "conditions_admission_texte": "Diplôme du Baccalauréat ou équivalent",
+              "conditions_admission_texte": "Classement national",
               "series_bac_requises": ["C", "D"],
-              "autres_prerequis": "Constitution d'un dossier",
-              "metiers_vises_typiques": []
-            },
-            {
-              "nom_filiere": "Réseaux Informatiques et Télécommunication",
-              "description_filiere": "",
-              "diplome_delivre": "Master",
-              "duree_etudes_ans": 2,
-              "conditions_admission_texte": "Relevé de notes universitaire ou justificatif de travail professionnel",
-              "series_bac_requises": [],
-              "autres_prerequis": "Licence ou équivalent",
-              "metiers_vises_typiques": []
-            },
-            {
-              "nom_filiere": "Système Informatique et Logiciels",
-              "description_filiere": "",
-              "diplome_delivre": "Master",
-              "duree_etudes_ans": 2,
-              "conditions_admission_texte": "Relevé de notes universitaire ou justificatif de travail professionnel",
-              "series_bac_requises": [],
-              "autres_prerequis": "Licence ou équivalent",
-              "metiers_vises_typiques": []
+              "autres_prerequis": "Moyenne pondérée SVT, PCT, Maths",
+              "metiers_vises_typiques": ["Agent de santé communautaire", "Responsable de surveillance épidémiologique", "Attaché de recherche en santé", "Assistant planification/suivi/évaluation", "Agent d'hygiène et d'assainissement"]
             }
           ]
         },
         {
-          "nom_faculte_ecole": "Faculté de Communication et Relations Internationales",
-          "filieres": [
-            {
-              "nom_filiere": "Communication et Relations Internationales",
-              "description_filiere": "",
-              "diplome_delivre": "Licence Professionnelle",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "Diplôme du Baccalauréat ou équivalent",
-              "series_bac_requises": ["Toutes séries"],
-              "autres_prerequis": "Constitution d'un dossier",
-              "metiers_vises_typiques": []
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "nom_universite": "Université IRGIB Africa",
-      "sigle": "IRGIB",
-      "statut": "Privé Agréé",
-      "localisation": "Cotonou, Porto-Novo, Parakou",
-      "site_web": "irgibafrica.university",
-      "facultes_ecoles": [
-        {
-          "nom_faculte_ecole": "Faculté d'Administration des Affaires",
-          "filieres": [
-            {
-              "nom_filiere": "Administration des Affaires",
-              "description_filiere": "Domaine d'activités et d'études qui englobent tous les aspects de l'administration d'une entreprise",
-              "diplome_delivre": "Licence professionnelle, Master professionnel",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "Pour les études en administration des entreprises - un BAC A, B, C, D, G",
-              "series_bac_requises": ["A", "B", "C", "D", "G"],
-              "autres_prerequis": "Frais de scolarité : Licence 1: 575.000 F CFA, Licence 2: 600.000 F CFA, Licence 3: 650.000 F CFA",
-              "metiers_vises_typiques": []
-            }
-          ]
-        },
-        {
-          "nom_faculte_ecole": "Faculté de Génie des Technologies de l'Information",
-          "filieres": [
-            {
-              "nom_filiere": "Génie des Technologies de l'Information et de la Communication",
-              "description_filiere": "Formation aux outils comme la téléphonie et l'Internet, l'apprentissage à distance",
-              "diplome_delivre": "Licence professionnelle, Master professionnel",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "",
-              "series_bac_requises": ["C", "D"],
-              "autres_prerequis": "",
-              "metiers_vises_typiques": []
-            },
-            {
-              "nom_filiere": "Génie des Technologies de la Communication",
-              "description_filiere": "",
-              "diplome_delivre": "Master professionnel",
-              "duree_etudes_ans": 2,
-              "conditions_admission_texte": "",
-              "series_bac_requises": [],
-              "autres_prerequis": "Licence ou équivalent",
-              "metiers_vises_typiques": []
-            }
-          ]
-        },
-        {
-          "nom_faculte_ecole": "Faculté des Sciences Économiques",
-          "filieres": [
-            {
-              "nom_filiere": "Sciences Économiques",
-              "description_filiere": "",
-              "diplome_delivre": "Licence professionnelle",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "",
-              "series_bac_requises": ["A", "B", "C", "D", "G"],
-              "autres_prerequis": "",
-              "metiers_vises_typiques": []
-            }
-          ]
-        },
-        {
-          "nom_faculte_ecole": "Faculté de Génie des Procédés",
-          "filieres": [
-            {
-              "nom_filiere": "Génie des Procédés de Fabrication et de Maintenance Industrielle",
-              "description_filiere": "",
-              "diplome_delivre": "Licence professionnelle",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "Pour les études génie des procédés - un BAC C ou D",
-              "series_bac_requises": ["C", "D"],
-              "autres_prerequis": "",
-              "metiers_vises_typiques": []
-            },
-            {
-              "nom_filiere": "Génie des Procédés de Production Industrielle",
-              "description_filiere": "",
-              "diplome_delivre": "Licence professionnelle, Master professionnel",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "",
-              "series_bac_requises": ["C", "D"],
-              "autres_prerequis": "",
-              "metiers_vises_typiques": []
-            },
-            {
-              "nom_filiere": "Procédés de Production Industrielle",
-              "description_filiere": "",
-              "diplome_delivre": "Master professionnel",
-              "duree_etudes_ans": 2,
-              "conditions_admission_texte": "",
-              "series_bac_requises": [],
-              "autres_prerequis": "Licence ou équivalent",
-              "metiers_vises_typiques": []
-            }
-          ]
-        },
-        {
-          "nom_faculte_ecole": "Faculté des Sciences Politiques et Juridiques",
-          "filieres": [
-            {
-              "nom_filiere": "Sciences Politiques et Juridiques",
-              "description_filiere": "",
-              "diplome_delivre": "Licence professionnelle",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "Pour les études de droit - être titulaire d'un BAC A, B, C, D, G",
-              "series_bac_requises": ["A", "B", "C", "D", "G"],
-              "autres_prerequis": "",
-              "metiers_vises_typiques": []
-            }
-          ]
-        },
-        {
-          "nom_faculte_ecole": "Faculté d'Analyses Biomédicales",
-          "filieres": [
-            {
-              "nom_filiere": "Génie des Procédés d'Expertises et Analyses",
-              "description_filiere": "Formation de spécialistes capables de mettre en œuvre des procédés d'analyse pour les industries chimiques, pharmaceutiques, agro-alimentaires, cosmétiques",
-              "diplome_delivre": "Licence professionnelle",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "",
-              "series_bac_requises": ["C", "D"],
-              "autres_prerequis": "",
-              "metiers_vises_typiques": []
-            },
-            {
-              "nom_filiere": "Analyses Biomédicales",
-              "description_filiere": "",
-              "diplome_delivre": "Licence professionnelle, Master professionnel",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "",
-              "series_bac_requises": ["C", "D"],
-              "autres_prerequis": "",
-              "metiers_vises_typiques": []
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "nom_universite": "Université Catholique d'Afrique de l'Ouest - Unité Universitaire de Cotonou",
-      "sigle": "UCAO-UUC",
-      "statut": "Privé Agréé",
-      "localisation": "Cotonou",
-      "site_web": "www.ucaobenin.org",
-      "facultes_ecoles": [
-        {
-          "nom_faculte_ecole": "Faculté de Gestion de l'Environnement",
-          "filieres": [
-            {
-              "nom_filiere": "Gestion de l'Environnement et Aménagement du Territoire",
-              "description_filiere": "",
-              "diplome_delivre": "Licence professionnelle, Master professionnel",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "Demande d'admission sur le site Internet. Constitution d'un dossier, suivi parfois d'un entretien. La motivation et le projet professionnel sont des critères de sélection importants",
-              "series_bac_requises": ["Toutes séries"],
-              "autres_prerequis": "Motivation et projet professionnel",
-              "metiers_vises_typiques": []
-            }
-          ]
-        },
-        {
-          "nom_faculte_ecole": "Faculté de Management",
-          "filieres": [
-            {
-              "nom_filiere": "Management des Ressources Humaines",
-              "description_filiere": "",
-              "diplome_delivre": "Licence professionnelle, Master professionnel",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "Demande d'admission sur le site Internet",
-              "series_bac_requises": ["Toutes séries"],
-              "autres_prerequis": "Motivation et projet professionnel",
-              "metiers_vises_typiques": []
-            },
-            {
-              "nom_filiere": "Gestion des Ressources Humaines",
-              "description_filiere": "",
-              "diplome_delivre": "Master professionnel",
-              "duree_etudes_ans": 2,
-              "conditions_admission_texte": "",
-              "series_bac_requises": [],
-              "autres_prerequis": "Licence ou équivalent",
-              "metiers_vises_typiques": []
-            }
-          ]
-        },
-        {
-          "nom_faculte_ecole": "Faculté des Sciences et Technologies",
-          "filieres": [
-            {
-              "nom_filiere": "Télécommunication et Réseaux Informatiques",
-              "description_filiere": "",
-              "diplome_delivre": "Licence professionnelle",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "",
-              "series_bac_requises": ["C", "D"],
-              "autres_prerequis": "",
-              "metiers_vises_typiques": []
-            },
-            {
-              "nom_filiere": "Réseaux informatiques",
-              "description_filiere": "",
-              "diplome_delivre": "Licence professionnelle",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "",
-              "series_bac_requises": ["C", "D"],
-              "autres_prerequis": "",
-              "metiers_vises_typiques": []
-            },
-            {
-              "nom_filiere": "Electronique",
-              "description_filiere": "",
-              "diplome_delivre": "Licence professionnelle",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "",
-              "series_bac_requises": ["C", "D"],
-              "autres_prerequis": "",
-              "metiers_vises_typiques": []
-            },
-            {
-              "nom_filiere": "Informatique de Gestion",
-              "description_filiere": "",
-              "diplome_delivre": "Licence professionnelle",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "",
-              "series_bac_requises": ["C", "D"],
-              "autres_prerequis": "",
-              "metiers_vises_typiques": []
-            }
-          ]
-        },
-        {
-          "nom_faculte_ecole": "Faculté de Communication et Commerce",
-          "filieres": [
-            {
-              "nom_filiere": "Communication et Action Publicitaire",
-              "description_filiere": "",
-              "diplome_delivre": "Licence professionnelle",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "",
-              "series_bac_requises": ["Toutes séries"],
-              "autres_prerequis": "",
-              "metiers_vises_typiques": []
-            },
-            {
-              "nom_filiere": "Action Commerciale et Force de Vente",
-              "description_filiere": "",
-              "diplome_delivre": "Licence professionnelle",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "",
-              "series_bac_requises": ["Toutes séries"],
-              "autres_prerequis": "",
-              "metiers_vises_typiques": []
-            },
-            {
-              "nom_filiere": "Transport et Logistique",
-              "description_filiere": "",
-              "diplome_delivre": "Licence professionnelle",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "",
-              "series_bac_requises": ["Toutes séries"],
-              "autres_prerequis": "",
-              "metiers_vises_typiques": []
-            }
-          ]
-        },
-        {
-          "nom_faculte_ecole": "Faculté d'Assurance",
-          "filieres": [
-            {
-              "nom_filiere": "Assurance",
-              "description_filiere": "",
-              "diplome_delivre": "Licence professionnelle, Master professionnel",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "",
-              "series_bac_requises": ["Toutes séries"],
-              "autres_prerequis": "",
-              "metiers_vises_typiques": []
-            }
-          ]
-        },
-        {
-          "nom_faculte_ecole": "Faculté des Sciences Agronomiques",
-          "filieres": [
-            {
-              "nom_filiere": "Sciences Agronomiques",
-              "description_filiere": "",
-              "diplome_delivre": "Master professionnel",
-              "duree_etudes_ans": 2,
-              "conditions_admission_texte": "",
-              "series_bac_requises": [],
-              "autres_prerequis": "Licence ou équivalent",
-              "metiers_vises_typiques": []
-            }
-          ]
-        },
-        {
-          "nom_faculte_ecole": "Faculté d'Audit et Contrôle de Gestion",
-          "filieres": [
-            {
-              "nom_filiere": "Audit et Contrôle de Gestion",
-              "description_filiere": "",
-              "diplome_delivre": "Master professionnel",
-              "duree_etudes_ans": 2,
-              "conditions_admission_texte": "",
-              "series_bac_requises": [],
-              "autres_prerequis": "Licence ou équivalent",
-              "metiers_vises_typiques": []
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "nom_universite": "Université Protestante d'Afrique de l'Ouest",
-      "sigle": "UPAO",
-      "statut": "Privé Agréé",
-      "localisation": "Porto-Novo",
-      "site_web": "upaobenin-edu.org",
-      "facultes_ecoles": [
-        {
-          "nom_faculte_ecole": "Institut des Sciences de Gestion et du Management",
-          "filieres": [
-            {
-              "nom_filiere": "Marketing et communication",
-              "description_filiere": "",
-              "diplome_delivre": "Licence professionnelle",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "Diplômes homologués et cosignés par l'état Béninois. Partenaire de l'Université d'Abomey Calavi (UAC)",
-              "series_bac_requises": ["Toutes séries"],
-              "autres_prerequis": "Membre du Réseau International Des Etablissements Privés d'Enseignement Superieur (RIDEPES/CAMES)",
-              "metiers_vises_typiques": []
-            },
-            {
-              "nom_filiere": "Management des Ressources Humaines",
-              "description_filiere": "",
-              "diplome_delivre": "Licence professionnelle",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "",
-              "series_bac_requises": ["Toutes séries"],
-              "autres_prerequis": "",
-              "metiers_vises_typiques": []
-            },
-            {
-              "nom_filiere": "Comptabilité et Gestion",
-              "description_filiere": "",
-              "diplome_delivre": "Licence professionnelle",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "",
-              "series_bac_requises": ["C", "D", "G2"],
-              "autres_prerequis": "",
-              "metiers_vises_typiques": []
-            },
-            {
-              "nom_filiere": "Secrétariat de Direction",
-              "description_filiere": "",
-              "diplome_delivre": "Licence professionnelle",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "",
-              "series_bac_requises": ["Toutes séries"],
-              "autres_prerequis": "",
-              "metiers_vises_typiques": []
-            },
-            {
-              "nom_filiere": "Banque, Finance et Assurance",
-              "description_filiere": "",
-              "diplome_delivre": "Licence professionnelle",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "",
-              "series_bac_requises": ["C", "D", "G2"],
-              "autres_prerequis": "",
-              "metiers_vises_typiques": []
-            }
-          ]
-        },
-        {
-          "nom_faculte_ecole": "Faculté de Théologie et des Sciences Religieuses",
-          "filieres": [
-            {
-              "nom_filiere": "Théologie",
-              "description_filiere": "Formation théologique protestante",
-              "diplome_delivre": "Licence, Master",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "",
-              "series_bac_requises": ["Toutes séries"],
-              "autres_prerequis": "",
-              "metiers_vises_typiques": []
-            }
-          ]
-        },
-        {
-          "nom_faculte_ecole": "Institut des Sciences de l'Éducation et de la Formation",
-          "filieres": [
-            {
-              "nom_filiere": "Génie Informatique et Télécommunication",
-              "description_filiere": "",
-              "diplome_delivre": "Licence professionnelle",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "",
-              "series_bac_requises": ["C", "D"],
-              "autres_prerequis": "",
-              "metiers_vises_typiques": []
-            },
-            {
-              "nom_filiere": "Education et Pédagogie",
-              "description_filiere": "",
-              "diplome_delivre": "Licence professionnelle",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "",
-              "series_bac_requises": ["Toutes séries"],
-              "autres_prerequis": "",
-              "metiers_vises_typiques": []
-            }
-          ]
-        }
-      ]
-    },
-    {
-      "nom_universite": "Université Polytechnique Internationale Obiang Mbasogo Nguema",
-      "sigle": "UPI-ONM",
-      "statut": "Privé Agréé",
-      "localisation": "Cotonou",
-      "site_web": "",
-      "facultes_ecoles": [
-        {
-          "nom_faculte_ecole": "Faculté Polytechnique",
-          "filieres": [
-            {
-              "nom_filiere": "Sciences et Techniques de l'Ingénieur",
-              "description_filiere": "",
-              "diplome_delivre": "Licence, Master, Diplôme d'Ingénieur",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "Diplôme du Baccalauréat ou équivalent",
-              "series_bac_requises": ["C", "D", "E", "F"],
-              "autres_prerequis": "Constitution d'un dossier",
-              "metiers_vises_typiques": []
-            }
-          ]
-        }
-      ]
-    }
-  ]
-}
- {"nom_filiere": "Sciences Mathématiques",
-              "description_filiere": "",
-              "diplome_delivre": "Licence, Master, Doctorat",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "Classement basé sur les moyennes en Mathématiques, SPCT, SVT pour les séries C et D; toutes les matières écrites pour DEAT",
-              "series_bac_requises": ["C", "D"],
-              "autres_prerequis": "Classement basé sur les moyennes",
-              "metiers_vises_typiques": []
-            },
-            {
-              "nom_filiere": "Sciences Physiques",
-              "description_filiere": "",
-              "diplome_delivre": "Licence, Master, Doctorat",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "Classement basé sur les moyennes en Mathématiques, SPCT, SVT pour les séries C et D; toutes les matières écrites pour DEAT",
-              "series_bac_requises": ["C", "D"],
-              "autres_prerequis": "Classement basé sur les moyennes",
-              "metiers_vises_typiques": []
-            },
-            {
-              "nom_filiere": "Sciences Chimiques",
-              "description_filiere": "",
-              "diplome_delivre": "Licence, Master, Doctorat",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "Classement basé sur les moyennes en Mathématiques, SPCT, SVT pour les séries C et D; toutes les matières écrites pour DEAT",
-              "series_bac_requises": ["C", "D"],
-              "autres_prerequis": "Classement basé sur les moyennes",
-              "metiers_vises_typiques": []
-            },
-            {
-              "nom_filiere": "Sciences de la Vie et de la Terre",
-              "description_filiere": "",
-              "diplome_delivre": "Licence, Master, Doctorat",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "Classement basé sur les moyennes en Mathématiques, SPCT, SVT pour les séries C et D; toutes les matières écrites pour DEAT",
-              "series_bac_requises": ["C", "D"],
-              "autres_prerequis": "Classement basé sur les moyennes",
-              "metiers_vises_typiques": []
-            }
-          ]
-        },
-        {
-          "nom_faculte_ecole": "Faculté des Lettres, Arts et Sciences Humaines (FLASH)",
+          "nom_faculte_ecole": "Faculté des Lettres, Langues, Arts et Communications (FLLAC)",
+          "description": "Formation en lettres, langues et communication",
           "filieres": [
             {
               "nom_filiere": "Géographie et Aménagement du Territoire",
-              "description_filiere": "",
-              "diplome_delivre": "Licence, Master, Doctorat",
+              "description_filiere": "Formation en géographie physique et humaine",
+              "diplome_delivre": "Licence",
               "duree_etudes_ans": 3,
-              "conditions_admission_texte": "Classement",
+              "conditions_admission_texte": "Classement national",
               "series_bac_requises": ["A1", "A2", "B", "C", "D"],
-              "autres_prerequis": "Classement",
-              "metiers_vises_typiques": []
-            },
-            {
-              "nom_filiere": "Socio-Anthropologie",
-              "description_filiere": "",
-              "diplome_delivre": "Licence, Master, Doctorat",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "Classement",
-              "series_bac_requises": ["A1", "A2", "B", "C", "D"],
-              "autres_prerequis": "Classement",
-              "metiers_vises_typiques": []
+              "autres_prerequis": "Moyennes Histoire-Géographie, Français, Philosophie",
+              "metiers_vises_typiques": ["Enseignant", "Géographe", "Aménageur", "Consultant territorial"]
             },
             {
               "nom_filiere": "Anglais",
-              "description_filiere": "",
-              "diplome_delivre": "Licence, Master, Doctorat",
+              "description_filiere": "Formation en langue et littérature anglaises",
+              "diplome_delivre": "Licence",
               "duree_etudes_ans": 3,
-              "conditions_admission_texte": "Classement",
-              "series_bac_requises": ["A1", "A2", "B", "C", "D"],
-              "autres_prerequis": "Classement",
-              "metiers_vises_typiques": []
+              "conditions_admission_texte": "Classement national",
+              "series_bac_requises": ["A1", "A2", "B"],
+              "autres_prerequis": "Moyennes Anglais, Français, Histoire",
+              "metiers_vises_typiques": ["Enseignant d'anglais", "Traducteur", "Interprète", "Guide touristique"]
             },
             {
               "nom_filiere": "Allemand",
-              "description_filiere": "",
-              "diplome_delivre": "Licence, Master, Doctorat",
+              "description_filiere": "Formation en langue et littérature allemandes",
+              "diplome_delivre": "Licence",
               "duree_etudes_ans": 3,
-              "conditions_admission_texte": "Classement",
-              "series_bac_requises": ["A1", "A2", "B", "C", "D"],
-              "autres_prerequis": "Classement",
-              "metiers_vises_typiques": []
+              "conditions_admission_texte": "Classement national",
+              "series_bac_requises": ["A1", "A2", "B"],
+              "autres_prerequis": "Moyennes Allemand, Français, Histoire",
+              "metiers_vises_typiques": ["Enseignant d'allemand", "Traducteur", "Interprète", "Coopération internationale"]
             },
             {
               "nom_filiere": "Espagnol",
-              "description_filiere": "",
-              "diplome_delivre": "Licence, Master, Doctorat",
+              "description_filiere": "Formation en langue et littérature espagnoles",
+              "diplome_delivre": "Licence",
               "duree_etudes_ans": 3,
-              "conditions_admission_texte": "Classement",
-              "series_bac_requises": ["A1", "A2", "B", "C", "D"],
-              "autres_prerequis": "Classement",
-              "metiers_vises_typiques": []
+              "conditions_admission_texte": "Classement national",
+              "series_bac_requises": ["A1", "A2", "B"],
+              "autres_prerequis": "Moyennes Espagnol, Français, Histoire",
+              "metiers_vises_typiques": ["Enseignant d'espagnol", "Traducteur", "Interprète", "Relations internationales"]
             },
             {
               "nom_filiere": "Lettres Modernes",
-              "description_filiere": "",
-              "diplome_delivre": "Licence, Master, Doctorat",
+              "description_filiere": "Formation en littérature et linguistique françaises",
+              "diplome_delivre": "Licence",
               "duree_etudes_ans": 3,
-              "conditions_admission_texte": "Classement",
+              "conditions_admission_texte": "Classement national",
+              "series_bac_requises": ["A1", "A2", "B"],
+              "autres_prerequis": "Moyennes Français, Philosophie, Histoire",
+              "metiers_vises_typiques": ["Enseignant de français", "Écrivain", "Journaliste", "Éditeur"]
+            },
+            {
+              "nom_filiere": "Socio-Anthropologie",
+              "description_filiere": "Formation en sociologie et anthropologie",
+              "diplome_delivre": "Licence",
+              "duree_etudes_ans": 3,
+              "conditions_admission_texte": "Classement national",
               "series_bac_requises": ["A1", "A2", "B", "C", "D"],
-              "autres_prerequis": "Classement",
-              "metiers_vises_typiques": []
-            },
+              "autres_prerequis": "Moyennes Français, Philosophie, Histoire",
+              "metiers_vises_typiques": ["Sociologue", "Anthropologue", "Travailleur social", "Chercheur"]
+            }
+          ]
+        },
+        {
+          "nom_faculte_ecole": "Institut National des Métiers d'Arts, d'Archéologie et de la Culture (INMAAC)",
+          "description": "Formation aux métiers artistiques et culturels",
+          "filieres": [
             {
-              "nom_filiere": "Sciences du Langage et de la Communication",
-              "description_filiere": "",
-              "diplome_delivre": "Licence, Master, Doctorat",
+              "nom_filiere": "Arts dramatiques",
+              "description_filiere": "Formation en art théâtral et dramaturgie",
+              "diplome_delivre": "Licence",
               "duree_etudes_ans": 3,
-              "conditions_admission_texte": "Classement",
+              "conditions_admission_texte": "Classement national",
               "series_bac_requises": ["A1", "A2", "B", "C", "D"],
-              "autres_prerequis": "Classement",
-              "metiers_vises_typiques": []
+              "autres_prerequis": "Épreuves pratiques et théoriques",
+              "metiers_vises_typiques": ["Comédien", "Metteur en scène", "Régisseur", "Voix off"]
             },
             {
-              "nom_filiere": "Administration Culturelle",
-              "description_filiere": "",
-              "diplome_delivre": "Licence, Master, Doctorat",
+              "nom_filiere": "Arts plastiques",
+              "description_filiere": "Formation en arts visuels et plastiques",
+              "diplome_delivre": "Licence",
               "duree_etudes_ans": 3,
-              "conditions_admission_texte": "Classement",
+              "conditions_admission_texte": "Classement national",
               "series_bac_requises": ["A1", "A2", "B", "C", "D"],
-              "autres_prerequis": "Classement",
-              "metiers_vises_typiques": []
+              "autres_prerequis": "Portfolio artistique",
+              "metiers_vises_typiques": ["Illustrateur", "Peintre", "Sculpteur", "Designer"]
             },
             {
-              "nom_filiere": "Arts (dramatiques, plastiques, musique, audiovisuel)",
-              "description_filiere": "",
-              "diplome_delivre": "Licence, Master, Doctorat",
+              "nom_filiere": "Musique et Musicologie",
+              "description_filiere": "Formation musicale théorique et pratique",
+              "diplome_delivre": "Licence",
               "duree_etudes_ans": 3,
-              "conditions_admission_texte": "Classement",
+              "conditions_admission_texte": "Classement national",
               "series_bac_requises": ["A1", "A2", "B", "C", "D"],
-              "autres_prerequis": "Classement",
-              "metiers_vises_typiques": []
-            }
-          ]
-        },
-        {
-          "nom_faculte_ecole": "Faculté des Sciences Économiques et de Gestion (FASEG)",
-          "filieres": [
-            {
-              "nom_filiere": "Économie",
-              "description_filiere": "",
-              "diplome_delivre": "Licence, Master, Doctorat",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "Classement",
-              "series_bac_requises": ["A", "B", "C", "D", "G2"],
-              "autres_prerequis": "Classement",
-              "metiers_vises_typiques": []
+              "autres_prerequis": "Épreuves musicales",
+              "metiers_vises_typiques": ["Chanteur", "Chef de chœur", "Compositeur", "Professeur de musique"]
             },
             {
-              "nom_filiere": "Gestion",
-              "description_filiere": "",
-              "diplome_delivre": "Licence, Master, Doctorat",
+              "nom_filiere": "Cinéma et Audiovisuel",
+              "description_filiere": "Formation en production cinématographique et audiovisuelle",
+              "diplome_delivre": "Licence",
               "duree_etudes_ans": 3,
-              "conditions_admission_texte": "Classement",
-              "series_bac_requises": ["A", "B", "C", "D", "G2"],
-              "autres_prerequis": "Classement",
-              "metiers_vises_typiques": []
+              "conditions_admission_texte": "Classement national",
+              "series_bac_requises": ["A1", "A2", "B", "C", "D"],
+              "autres_prerequis": "Portfolio créatif",
+              "metiers_vises_typiques": ["Scénariste", "Scénographe", "Monteur image", "Réalisateur"]
             },
             {
-              "nom_filiere": "Finance et Comptabilité",
-              "description_filiere": "",
-              "diplome_delivre": "Licence, Master, Doctorat",
+              "nom_filiere": "Administration culturelle",
+              "description_filiere": "Formation en gestion et management culturel",
+              "diplome_delivre": "Licence",
               "duree_etudes_ans": 3,
-              "conditions_admission_texte": "Classement",
-              "series_bac_requises": ["A", "B", "C", "D", "G2"],
-              "autres_prerequis": "Classement",
-              "metiers_vises_typiques": []
-            },
-            {
-              "nom_filiere": "Marketing et Management",
-              "description_filiere": "",
-              "diplome_delivre": "Licence, Master, Doctorat",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "Classement",
-              "series_bac_requises": ["A", "B", "C", "D", "G2"],
-              "autres_prerequis": "Classement",
-              "metiers_vises_typiques": []
-            }
-          ]
-        },
-        {
-          "nom_faculte_ecole": "Faculté des Sciences de la Santé (FSS)",
-          "filieres": [
-            {
-              "nom_filiere": "Médecine Humaine",
-              "description_filiere": "",
-              "diplome_delivre": "Doctorat en Médecine",
-              "duree_etudes_ans": 7,
-              "conditions_admission_texte": "Concours d'entrée",
-              "series_bac_requises": ["C", "D"],
-              "autres_prerequis": "Concours d'entrée",
-              "metiers_vises_typiques": []
-            },
-            {
-              "nom_filiere": "Pharmacie",
-              "description_filiere": "",
-              "diplome_delivre": "Doctorat en Pharmacie",
-              "duree_etudes_ans": 6,
-              "conditions_admission_texte": "Concours d'entrée",
-              "series_bac_requises": ["C", "D"],
-              "autres_prerequis": "Concours d'entrée",
-              "metiers_vises_typiques": []
-            },
-            {
-              "nom_filiere": "Santé publique polyvalente",
-              "description_filiere": "",
-              "diplome_delivre": "Licence et Master en Santé Publique",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "Concours d'entrée",
-              "series_bac_requises": ["C", "D"],
-              "autres_prerequis": "Concours d'entrée",
-              "metiers_vises_typiques": []
-            }
-          ]
-        },
-        {
-          "nom_faculte_ecole": "Faculté de Droit et de Science Politique (FADESP)",
-          "filieres": [
-            {
-              "nom_filiere": "Droit privé",
-              "description_filiere": "",
-              "diplome_delivre": "Licence, Master, Doctorat",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "Baccalauréat toutes séries, ou diplôme équivalent reconnu par la Commission Universitaire d'Orientation (CUO)",
-              "series_bac_requises": ["Toutes séries"],
-              "autres_prerequis": "Toutes séries de baccalauréat ou tout autre diplôme reconnu équivalent",
-              "metiers_vises_typiques": []
-            },
-            {
-              "nom_filiere": "Droit public",
-              "description_filiere": "",
-              "diplome_delivre": "Licence, Master, Doctorat",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "Baccalauréat toutes séries, ou diplôme équivalent reconnu par la Commission Universitaire d'Orientation (CUO)",
-              "series_bac_requises": ["Toutes séries"],
-              "autres_prerequis": "Toutes séries de baccalauréat ou tout autre diplôme reconnu équivalent",
-              "metiers_vises_typiques": []
-            },
-            {
-              "nom_filiere": "Sciences politiques",
-              "description_filiere": "",
-              "diplome_delivre": "Licence, Master, Doctorat",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "Baccalauréat toutes séries, ou diplôme équivalent reconnu par la Commission Universitaire d'Orientation (CUO)",
-              "series_bac_requises": ["Toutes séries"],
-              "autres_prerequis": "Toutes séries de baccalauréat ou tout autre diplôme reconnu équivalent",
-              "metiers_vises_typiques": []
-            }
-          ]
-        },
-        {
-          "nom_faculte_ecole": "Faculté des Sciences Agronomiques (FSA)",
-          "filieres": [
-            {
-              "nom_filiere": "Sciences et Techniques de Production Végétale",
-              "description_filiere": "",
-              "diplome_delivre": "Licence, Master, Doctorat, Diplôme d'Ingénieur Agronome",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "Concours d'entrée",
-              "series_bac_requises": ["C", "D", "DEAT"],
-              "autres_prerequis": "Concours d'entrée",
-              "metiers_vises_typiques": []
-            },
-            {
-              "nom_filiere": "Sciences et Techniques de Production Animale",
-              "description_filiere": "",
-              "diplome_delivre": "Licence, Master, Doctorat, Diplôme d'Ingénieur Agronome",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "Concours d'entrée",
-              "series_bac_requises": ["C", "D", "DEAT"],
-              "autres_prerequis": "Concours d'entrée",
-              "metiers_vises_typiques": []
-            },
-            {
-              "nom_filiere": "Sciences du Sol",
-              "description_filiere": "",
-              "diplome_delivre": "Licence, Master, Doctorat, Diplôme d'Ingénieur Agronome",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "Concours d'entrée",
-              "series_bac_requises": ["C", "D", "DEAT"],
-              "autres_prerequis": "Concours d'entrée",
-              "metiers_vises_typiques": []
-            },
-            {
-              "nom_filiere": "Economie et Sociologie Rurales",
-              "description_filiere": "",
-              "diplome_delivre": "Licence, Master, Doctorat, Diplôme d'Ingénieur Agronome",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "Concours d'entrée",
-              "series_bac_requises": ["C", "D", "DEAT"],
-              "autres_prerequis": "Concours d'entrée",
-              "metiers_vises_typiques": []
-            },
-            {
-              "nom_filiere": "Aménagement et Gestion des Ressources Naturelles",
-              "description_filiere": "",
-              "diplome_delivre": "Licence, Master, Doctorat, Diplôme d'Ingénieur Agronome",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "Concours d'entrée",
-              "series_bac_requises": ["C", "D", "DEAT"],
-              "autres_prerequis": "Concours d'entrée",
-              "metiers_vises_typiques": []
-            },
-            {
-              "nom_filiere": "Nutrition et Sciences Alimentaires",
-              "description_filiere": "",
-              "diplome_delivre": "Licence, Master, Doctorat, Diplôme d'Ingénieur Agronome",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "Concours d'entrée",
-              "series_bac_requises": ["C", "D", "DEAT"],
-              "autres_prerequis": "Concours d'entrée",
-              "metiers_vises_typiques": []
-            }
-          ]
-        },
-        {
-          "nom_faculte_ecole": "École Polytechnique d'Abomey-Calavi (EPAC)",
-          "filieres": [
-            {
-              "nom_filiere": "Génie Civil",
-              "description_filiere": "",
-              "diplome_delivre": "Licence Professionnelle, Diplôme d'Ingénieur",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "Concours d'entrée",
-              "series_bac_requises": ["C", "D", "E", "F1", "F2", "F3", "F4"],
-              "autres_prerequis": "Concours d'entrée",
-              "metiers_vises_typiques": []
-            },
-            {
-              "nom_filiere": "Génie Électrique",
-              "description_filiere": "",
-              "diplome_delivre": "Licence Professionnelle, Diplôme d'Ingénieur",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "Concours d'entrée",
-              "series_bac_requises": ["C", "D", "E", "F1", "F2", "F3", "F4"],
-              "autres_prerequis": "Concours d'entrée",
-              "metiers_vises_typiques": []
-            },
-            {
-              "nom_filiere": "Génie Mécanique",
-              "description_filiere": "",
-              "diplome_delivre": "Licence Professionnelle, Diplôme d'Ingénieur",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "Concours d'entrée",
-              "series_bac_requises": ["C", "D", "E", "F1", "F2", "F3", "F4"],
-              "autres_prerequis": "Concours d'entrée",
-              "metiers_vises_typiques": []
-            },
-            {
-              "nom_filiere": "Génie Informatique et Télécommunications",
-              "description_filiere": "",
-              "diplome_delivre": "Licence Professionnelle, Diplôme d'Ingénieur",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "Concours d'entrée",
-              "series_bac_requises": ["C", "D", "E", "F1", "F2", "F3", "F4"],
-              "autres_prerequis": "Concours d'entrée",
-              "metiers_vises_typiques": []
-            },
-            {
-              "nom_filiere": "Génie Chimique et Biologique",
-              "description_filiere": "",
-              "diplome_delivre": "Licence Professionnelle, Diplôme d'Ingénieur",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "Concours d'entrée",
-              "series_bac_requises": ["C", "D", "E", "F1", "F2", "F3", "F4"],
-              "autres_prerequis": "Concours d'entrée",
-              "metiers_vises_typiques": []
-            },
-            {
-              "nom_filiere": "Sciences Industrielles et Techniques",
-              "description_filiere": "",
-              "diplome_delivre": "Licence Professionnelle, Diplôme d'Ingénieur",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "Concours d'entrée",
-              "series_bac_requises": ["C", "D", "E", "F1", "F2", "F3", "F4"],
-              "autres_prerequis": "Concours d'entrée",
-              "metiers_vises_typiques": []
-            },
-            {
-              "nom_filiere": "Travaux publics",
-              "description_filiere": "",
-              "diplome_delivre": "Licence Professionnelle, Diplôme d'Ingénieur",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "Concours d'entrée",
-              "series_bac_requises": ["C", "D", "E", "F1", "F2", "F3", "F4"],
-              "autres_prerequis": "Concours d'entrée",
-              "metiers_vises_typiques": []
+              "conditions_admission_texte": "Classement national",
+              "series_bac_requises": ["A1", "A2", "B", "C", "D"],
+              "autres_prerequis": "Connaissances culturelles",
+              "metiers_vises_typiques": ["Gestionnaire culturel", "Médiateur culturel", "Chargé de communication culturelle"]
             }
           ]
         },
         {
           "nom_faculte_ecole": "Institut National de l'Eau (INE)",
+          "description": "Formation spécialisée dans les métiers de l'eau",
           "filieres": [
             {
-              "nom_filiere": "Génie de l'eau et Assainissement",
-              "description_filiere": "",
-              "diplome_delivre": "Licence Professionnelle, Master",
+              "nom_filiere": "Hydrologie quantitative",
+              "description_filiere": "Formation en mesure et analyse des ressources en eau",
+              "diplome_delivre": "Licence",
               "duree_etudes_ans": 3,
-              "conditions_admission_texte": "Classement",
-              "series_bac_requises": ["C", "D", "DEAT"],
-              "autres_prerequis": "Classement",
-              "metiers_vises_typiques": []
+              "conditions_admission_texte": "Classement national",
+              "series_bac_requises": ["C", "D"],
+              "autres_prerequis": "Moyennes Maths, PCT, SVT",
+              "metiers_vises_typiques": ["Hydrologue", "Analyste des ressources en eau", "Consultant en eau"]
             },
             {
-              "nom_filiere": "Hydrologie et Gestion Intégrée des Ressources en Eau",
-              "description_filiere": "",
-              "diplome_delivre": "Licence Professionnelle, Master",
+              "nom_filiere": "Hydrogéologie",
+              "description_filiere": "Formation en eaux souterraines",
+              "diplome_delivre": "Licence",
               "duree_etudes_ans": 3,
-              "conditions_admission_texte": "Classement",
-              "series_bac_requises": ["C", "D", "DEAT"],
-              "autres_prerequis": "Classement",
-              "metiers_vises_typiques": []
+              "conditions_admission_texte": "Classement national",
+              "series_bac_requises": ["C", "D"],
+              "autres_prerequis": "Moyennes Maths, PCT, SVT",
+              "metiers_vises_typiques": ["Hydrogéologue", "Foreur", "Consultant en eau souterraine"]
             },
             {
-              "nom_filiere": "Sciences et Gestion de l'Environnement",
-              "description_filiere": "",
-              "diplome_delivre": "Licence Professionnelle, Master",
+              "nom_filiere": "Ecohydrologie",
+              "description_filiere": "Formation en écologie des milieux aquatiques",
+              "diplome_delivre": "Licence",
               "duree_etudes_ans": 3,
-              "conditions_admission_texte": "Classement",
-              "series_bac_requises": ["C", "D", "DEAT"],
-              "autres_prerequis": "Classement",
-              "metiers_vises_typiques": []
+              "conditions_admission_texte": "Classement national",
+              "series_bac_requises": ["C", "D"],
+              "autres_prerequis": "Moyennes SVT, PCT, Maths",
+              "metiers_vises_typiques": ["Ecohydrologue", "Gestionnaire d'écosystèmes aquatiques"]
             },
             {
-              "nom_filiere": "Hydraulique et Maîtrise de l'eau",
-              "description_filiere": "",
-              "diplome_delivre": "Licence Professionnelle, Master",
+              "nom_filiere": "Gestion intégrée des ressources en eau",
+              "description_filiere": "Formation en gestion durable de l'eau",
+              "diplome_delivre": "Licence",
               "duree_etudes_ans": 3,
-              "conditions_admission_texte": "Classement",
-              "series_bac_requises": ["C", "D", "DEAT"],
-              "autres_prerequis": "Classement",
-              "metiers_vises_typiques": []
+              "conditions_admission_texte": "Classement national",
+              "series_bac_requises": ["C", "D"],
+              "autres_prerequis": "Moyennes Maths, PCT, SVT",
+              "metiers_vises_typiques": ["Gestionnaire des ressources en eau", "Planificateur hydraulique"]
+            },
+            {
+              "nom_filiere": "Hydraulique et Assainissement",
+              "description_filiere": "Formation en ingénierie hydraulique",
+              "diplome_delivre": "Licence",
+              "duree_etudes_ans": 3,
+              "conditions_admission_texte": "Classement national",
+              "series_bac_requises": ["C", "D", "E"],
+              "autres_prerequis": "Moyennes Maths, PCT",
+              "metiers_vises_typiques": ["Ingénieur hydraulique", "Contrôleur des travaux d'assainissement"]
+            },
+            {
+              "nom_filiere": "Eau Hygiène et Assainissement (EHA)",
+              "description_filiere": "Formation en santé publique liée à l'eau",
+              "diplome_delivre": "Licence",
+              "duree_etudes_ans": 3,
+              "conditions_admission_texte": "Classement national",
+              "series_bac_requises": ["C", "D"],
+              "autres_prerequis": "Moyennes SVT, PCT, Maths",
+              "metiers_vises_typiques": ["Agent d'hygiène et d'assainissement", "Promoteur de santé environnementale"]
             }
           ]
         },
         {
-          "nom_faculte_ecole": "Institut de Mathématiques et de Sciences Physiques (IMSP)",
+          "nom_faculte_ecole": "École Nationale d'Économie Appliquée et de Management (ENEAM)",
+          "description": "Formation en économie, finance et management",
           "filieres": [
             {
-              "nom_filiere": "Classes préparatoires Mathématiques, Physiques et Science de l'Ingénieur (MPSI)",
-              "description_filiere": "",
-              "diplome_delivre": "Classes préparatoires, Master, Doctorat",
-              "duree_etudes_ans": 2,
-              "conditions_admission_texte": "Classement basé sur les moyennes en Français – Histoire-Géographie/Anglais – Mathématiques",
-              "series_bac_requises": ["A1", "A2", "B", "C", "D", "DEAT", "DT/STI"],
-              "autres_prerequis": "Classement basé sur les moyennes",
-              "metiers_vises_typiques": []
-            },
-            {
-              "nom_filiere": "Physique-Chimie et Science de l'Ingénieur (PCSI)",
-              "description_filiere": "",
-              "diplome_delivre": "Classes préparatoires, Master, Doctorat",
-              "duree_etudes_ans": 2,
-              "conditions_admission_texte": "Classement basé sur les moyennes en Français – Histoire-Géographie/Anglais – Mathématiques",
-              "series_bac_requises": ["A1", "A2", "B", "C", "D", "DEAT", "DT/STI"],
-              "autres_prerequis": "Classement basé sur les moyennes",
-              "metiers_vises_typiques": []
-            }
-          ]
-        },
-        {
-          "nom_faculte_ecole": "Institut National Médico-Sanitaire (INMeS)",
-          "filieres": [
-            {
-              "nom_filiere": "Infirmiers et Infirmières d'État",
-              "description_filiere": "",
+              "nom_filiere": "Intelligence Artificielle",
+              "description_filiere": "Formation en IA et science des données",
               "diplome_delivre": "Licence",
               "duree_etudes_ans": 3,
-              "conditions_admission_texte": "",
-              "series_bac_requises": ["C", "D"],
-              "autres_prerequis": "",
-              "metiers_vises_typiques": ["Hôpitaux", "formations sanitaires", "services de santé des entreprises", "ONG", "exercice libéral"]
+              "conditions_admission_texte": "Classement national",
+              "series_bac_requises": ["C", "D", "E"],
+              "autres_prerequis": "Moyennes Maths, Sciences appliquées",
+              "metiers_vises_typiques": ["Développeur IA", "Data Analyst", "Architecte de données", "Digital planner"]
             },
             {
-              "nom_filiere": "Sages-femmes d'État",
-              "description_filiere": "",
+              "nom_filiere": "Analyse Informatique et Programmation",
+              "description_filiere": "Formation en développement logiciel",
               "diplome_delivre": "Licence",
               "duree_etudes_ans": 3,
-              "conditions_admission_texte": "",
-              "series_bac_requises": ["C", "D"],
-              "autres_prerequis": "",
-              "metiers_vises_typiques": ["Hôpitaux", "formations sanitaires", "services de santé des entreprises", "ONG", "exercice libéral"]
+              "conditions_admission_texte": "Classement national",
+              "series_bac_requises": ["C", "D", "E"],
+              "autres_prerequis": "Moyennes Maths, Technologie",
+              "metiers_vises_typiques": ["Développeur d'applications", "Analyste programmeur", "Chef de projet informatique"]
+            },
+            {
+              "nom_filiere": "Banque et Finance de Marché",
+              "description_filiere": "Formation en services bancaires et financiers",
+              "diplome_delivre": "Licence",
+              "duree_etudes_ans": 3,
+              "conditions_admission_texte": "Classement national",
+              "series_bac_requises": ["B", "C", "D", "G2"],
+              "autres_prerequis": "Moyennes Économie, Maths",
+              "metiers_vises_typiques": ["Banquier", "Analyste financier", "Gestionnaire de portefeuille"]
+            },
+            {
+              "nom_filiere": "Banque et Institutions des Micro-finances",
+              "description_filiere": "Formation en microfinance et inclusion financière",
+              "diplome_delivre": "Licence",
+              "duree_etudes_ans": 3,
+              "conditions_admission_texte": "Classement national",
+              "series_bac_requises": ["B", "G2", "G3"],
+              "autres_prerequis": "Moyennes Économie, Étude de cas",
+              "metiers_vises_typiques": ["Agent de crédit", "Gestionnaire de microfinance", "Conseiller financier"]
+            },
+            {
+              "nom_filiere": "Marketing Digital et Community Management",
+              "description_filiere": "Formation en marketing numérique",
+              "diplome_delivre": "Licence",
+              "duree_etudes_ans": 3,
+              "conditions_admission_texte": "Classement national",
+              "series_bac_requises": ["B", "G2", "G3"],
+              "autres_prerequis": "Moyennes Organisation, Français, Anglais",
+              "metiers_vises_typiques": ["Community Manager", "Responsable marketing digital", "Chef de produit", "Data analyst"]
+            },
+            {
+              "nom_filiere": "Gestion des Transports",
+              "description_filiere": "Formation en logistique et transport",
+              "diplome_delivre": "Licence",
+              "duree_etudes_ans": 3,
+              "conditions_admission_texte": "Classement national",
+              "series_bac_requises": ["B", "C", "D", "G2", "G3"],
+              "autres_prerequis": "Moyennes selon série",
+              "metiers_vises_typiques": ["Gestionnaire logistique", "Planificateur transport", "Responsable supply chain"]
+            },
+            {
+              "nom_filiere": "Statistique économique",
+              "description_filiere": "Formation en statistiques appliquées à l'économie",
+              "diplome_delivre": "Licence",
+              "duree_etudes_ans": 3,
+              "conditions_admission_texte": "Classement national",
+              "series_bac_requises": ["B", "C", "D"],
+              "autres_prerequis": "Moyennes Maths, Économie",
+              "metiers_vises_typiques": ["Statisticien", "Data analyst", "Chargé d'études", "Planificateur"]
+            },
+            {
+              "nom_filiere": "Comptabilité",
+              "description_filiere": "Formation en comptabilité et audit",
+              "diplome_delivre": "Licence",
+              "duree_etudes_ans": 3,
+              "conditions_admission_texte": "Classement national",
+              "series_bac_requises": ["B", "C", "D", "G2"],
+              "autres_prerequis": "Moyennes selon série",
+              "metiers_vises_typiques": ["Comptable", "Auditeur", "Contrôleur de gestion", "Expert-comptable"]
+            },
+            {
+              "nom_filiere": "Gestion Financière et Comptable",
+              "description_filiere": "Formation en finance et comptabilité d'entreprise",
+              "diplome_delivre": "Licence",
+              "duree_etudes_ans": 3,
+              "conditions_admission_texte": "Classement national",
+              "series_bac_requises": ["B", "C", "D", "G2"],
+              "autres_prerequis": "Moyennes selon série",
+              "metiers_vises_typiques": ["Responsable financier", "Analyste financier", "Contrôleur de gestion"]
             }
           ]
         },
         {
           "nom_faculte_ecole": "Institut de Formation et de Recherche en Informatique (IFRI)",
+          "description": "Formation spécialisée en informatique et technologies",
           "filieres": [
             {
-              "nom_filiere": "Sécurité informatique",
-              "description_filiere": "",
+              "nom_filiere": "Intelligence Artificielle (IA)",
+              "description_filiere": "Formation avancée en IA et machine learning",
               "diplome_delivre": "Licence",
               "duree_etudes_ans": 3,
-              "conditions_admission_texte": "",
-              "series_bac_requises": ["C", "D", "E", "F", "DTI", "WAEC"],
-              "autres_prerequis": "",
-              "metiers_vises_typiques": ["Administrateurs réseaux", "auditeurs de sécurité", "gestionnaire du parc informatique"]
+              "conditions_admission_texte": "Classement national",
+              "series_bac_requises": ["C", "D", "E"],
+              "autres_prerequis": "Moyennes Maths appliquées, Sciences",
+              "metiers_vises_typiques": ["Développeur IA", "Data scientist", "Architecte de données", "Consultant IA"]
             },
             {
-              "nom_filiere": "Génie logiciel",
-              "description_filiere": "",
+              "nom_filiere": "Sécurité Informatique",
+              "description_filiere": "Formation en cybersécurité et sécurité des SI",
               "diplome_delivre": "Licence",
               "duree_etudes_ans": 3,
-              "conditions_admission_texte": "",
-              "series_bac_requises": ["C", "D", "E", "F", "DTI", "WAEC"],
-              "autres_prerequis": "",
-              "metiers_vises_typiques": ["Administrateurs de bases de données", "développeurs d'applications"]
+              "conditions_admission_texte": "Classement national",
+              "series_bac_requises": ["C", "D", "E"],
+              "autres_prerequis": "Moyennes Maths, Technologies",
+              "metiers_vises_typiques": ["Expert en cybersécurité", "Administrateur sécurité", "Consultant sécurité"]
             },
             {
-              "nom_filiere": "Informatique générale",
-              "description_filiere": "",
-              "diplome_delivre": "Master",
-              "duree_etudes_ans": 2,
-              "conditions_admission_texte": "",
-              "series_bac_requises": [],
-              "autres_prerequis": "",
-              "metiers_vises_typiques": ["Administration des bases de données", "réseaux", "sécurité informatique"]
+              "nom_filiere": "Systèmes embarqués et Internet des Objets (SEIoT)",
+              "description_filiere": "Formation en systèmes embarqués et IoT",
+              "diplome_delivre": "Licence",
+              "duree_etudes_ans": 3,
+              "conditions_admission_texte": "Classement national",
+              "series_bac_requises": ["C", "D", "E"],
+              "autres_prerequis": "Moyennes Maths, Électronique",
+              "metiers_vises_typiques": ["Développeur IoT", "Ingénieur systèmes embarqués", "Concepteur de solutions connectées"]
+            },
+            {
+              "nom_filiere": "Systèmes et Réseaux",
+              "description_filiere": "Formation en administration systèmes et réseaux",
+              "diplome_delivre": "Licence",
+              "duree_etudes_ans": 3,
+              "conditions_admission_texte": "Classement national",
+              "series_bac_requises": ["C", "D", "E"],
+              "autres_prerequis": "Moyennes Maths, Technologies",
+              "metiers_vises_typiques": ["Administrateur systèmes", "Ingénieur réseaux", "Technicien informatique"]
+            },
+            {
+              "nom_filiere": "Développement (Programmation)",
+              "description_filiere": "Formation en développement logiciel",
+              "diplome_delivre": "Licence",
+              "duree_etudes_ans": 3,
+              "conditions_admission_texte": "Classement national",
+              "series_bac_requises": ["C", "D", "E"],
+              "autres_prerequis": "Moyennes Maths, Logique",
+              "metiers_vises_typiques": ["Développeur web", "Développeur mobile", "Ingénieur logiciel"]
             }
           ]
         },
         {
-          "nom_faculte_ecole": "Centre Interfacultaire de Formation et de Recherche en Environnement pour le Développement Durable (CIFRED)",
+          "nom_faculte_ecole": "Faculté des Sciences Agronomiques (FSA)",
+          "description": "Formation en agriculture et sciences agronomiques",
           "filieres": [
             {
-              "nom_filiere": "Sciences de l'environnement et développement durable",
-              "description_filiere": "",
-              "diplome_delivre": "Licence professionnelle",
+              "nom_filiere": "Sciences et Techniques de Production Végétale",
+              "description_filiere": "Formation en agronomie et production végétale",
+              "diplome_delivre": "Licence",
               "duree_etudes_ans": 3,
-              "conditions_admission_texte": "",
+              "conditions_admission_texte": "Classement national",
               "series_bac_requises": ["C", "D"],
-              "autres_prerequis": "",
-              "metiers_vises_typiques": []
+              "autres_prerequis": "Moyennes SVT, PCT, Maths",
+              "metiers_vises_typiques": ["Ingénieur agricole", "Entrepreneur agricole", "Technicien qualité cultures", "Conseiller agricole"]
             },
             {
-              "nom_filiere": "Géosciences de l'Environnement et Développement Durable",
-              "description_filiere": "",
-              "diplome_delivre": "Master professionnel",
-              "duree_etudes_ans": 2,
-              "conditions_admission_texte": "",
-              "series_bac_requises": [],
-              "autres_prerequis": "Licence dans une discipline pertinente",
-              "metiers_vises_typiques": []
+              "nom_filiere": "Sciences et Techniques de Production Animale",
+              "description_filiere": "Formation en zootechnie et élevage",
+              "diplome_delivre": "Licence",
+              "duree_etudes_ans": 3,
+              "conditions_admission_texte": "Classement national",
+              "series_bac_requises": ["C", "D"],
+              "autres_prerequis": "Moyennes SVT, PCT, Maths",
+              "metiers_vises_typiques": ["Zootechnicien", "Technicien élevage", "Vétérinaire", "Entrepreneur en élevage"]
             },
             {
-              "nom_filiere": "Environnement, Santé et Développement Durable",
-              "description_filiere": "",
-              "diplome_delivre": "Master professionnel",
-              "duree_etudes_ans": 2,
-              "conditions_admission_texte": "",
-              "series_bac_requises": [],
-              "autres_prerequis": "Licence dans une discipline pertinente",
-              "metiers_vises_typiques": []
+              "nom_filiere": "Aménagement et Gestion des Forêts et Parcours Naturels",
+              "description_filiere": "Formation en foresterie et gestion des écosystèmes",
+              "diplome_delivre": "Licence",
+              "duree_etudes_ans": 3,
+              "conditions_admission_texte": "Classement national",
+              "series_bac_requises": ["C", "D"],
+              "autres_prerequis": "Moyennes SVT, PCT, Maths",
+              "metiers_vises_typiques": ["Gestionnaire forestier", "Ingénieur forestier", "Garde forestier", "Écologue"]
+            },
+            {
+              "nom_filiere": "Zootechnie",
+              "description_filiere": "Formation spécialisée en élevage et production animale",
+              "diplome_delivre": "Licence",
+              "duree_etudes_ans": 3,
+              "conditions_admission_texte": "Classement national",
+              "series_bac_requises": ["C", "D"],
+              "autres_prerequis": "Moyennes SVT, PCT, Maths",
+              "metiers_vises_typiques": ["Zootechnicien", "Spécialiste en alimentation animale", "Génétique animale"]
             }
           ]
         },
         {
-          "nom_faculte_ecole": "Institut de Langue Arabe et de la Culture Islamique (ILACI)",
+          "nom_faculte_ecole": "Institut National Médico-Sanitaire (INMeS)",
+          "description": "Formation paramédicale et sanitaire",
           "filieres": [
             {
-              "nom_filiere": "Langue arabe et Culture islamique",
-              "description_filiere": "",
-              "diplome_delivre": "Maîtrise",
-              "duree_etudes_ans": 4,
-              "conditions_admission_texte": "Concours d'entrée, âge ≤ 23 ans",
-              "series_bac_requises": ["Toutes séries"],
-              "autres_prerequis": "4 ans (arabophones); 4 ans + 1 an préparatoire (francophones)",
-              "metiers_vises_typiques": []
+              "nom_filiere": "Sciences Infirmières",
+              "description_filiere": "Formation en soins infirmiers",
+              "diplome_delivre": "Licence en Sciences Infirmières",
+              "duree_etudes_ans": 3,
+              "conditions_admission_texte": "Concours d'entrée",
+              "series_bac_requises": ["C", "D"],
+              "autres_prerequis": "Concours avec PCT, SVT, Maths",
+              "metiers_vises_typiques": ["Infirmier", "Infirmier spécialisé", "Cadre infirmier"]
+            },
+            {
+              "nom_filiere": "Sciences Obstétricales",
+              "description_filiere": "Formation en obstétrique et soins maternels",
+              "diplome_delivre": "Licence en Sciences Obstétricales",
+              "duree_etudes_ans": 3,
+              "conditions_admission_texte": "Concours d'entrée",
+              "series_bac_requises": ["C", "D"],
+              "autres_prerequis": "Concours avec PCT, SVT, Maths",
+              "metiers_vises_typiques": ["Sage-femme", "Obstétricien paramédical", "Cadre de maternité"]
+            }
+          ]
+        },
+        {
+          "nom_faculte_ecole": "École du Patrimoine Africain (EPA)",
+          "description": "Formation en patrimoine et tourisme culturel",
+          "filieres": [
+            {
+              "nom_filiere": "Gestion du patrimoine culturel",
+              "description_filiere": "Formation en conservation et valorisation du patrimoine",
+              "diplome_delivre": "Licence",
+              "duree_etudes_ans": 3,
+              "conditions_admission_texte": "Classement national",
+              "series_bac_requises": ["A1", "A2", "B", "C", "D"],
+              "autres_prerequis": "Culture générale, Histoire",
+              "metiers_vises_typiques": ["Gestionnaire du patrimoine culturel", "Conservateur de musée", "Médiateur culturel"]
+            },
+            {
+              "nom_filiere": "Patrimoine et gestion des musées",
+              "description_filiere": "Formation spécialisée en muséologie",
+              "diplome_delivre": "Licence",
+              "duree_etudes_ans": 3,
+              "conditions_admission_texte": "Classement national",
+              "series_bac_requises": ["A1", "A2", "B"],
+              "autres_prerequis": "Culture artistique et historique",
+              "metiers_vises_typiques": ["Conservateur de musée", "Guide culturel", "Responsable collections"]
             }
           ]
         }
@@ -1083,251 +955,38 @@
       "nom_universite": "Université de Parakou",
       "sigle": "UP",
       "statut": "Public",
-      "localisation": "Parakou, avec des campus annexes à Savè",
-      "site_web": "",
+      "localisation": "Parakou, Nord du Bénin",
+      "site_web": "https://www.univ-parakou.bj",
       "facultes_ecoles": [
         {
-          "nom_faculte_ecole": "Faculté d'Agronomie (FA)",
+          "nom_faculte_ecole": "Faculté de Médecine",
+          "description": "Formation médicale adaptée aux besoins du Nord Bénin",
           "filieres": [
             {
-              "nom_filiere": "Sciences et Techniques de Production Végétale",
-              "description_filiere": "",
-              "diplome_delivre": "Licence, Master",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "",
-              "series_bac_requises": ["C", "D"],
-              "autres_prerequis": "",
-              "metiers_vises_typiques": ["Encadrement des paysans", "Auto-emploi", "Cadres des Eaux et Forêts", "Encadrements des éleveurs"]
-            },
-            {
-              "nom_filiere": "Sciences et Techniques de Production Animale et Halieutique",
-              "description_filiere": "",
-              "diplome_delivre": "Licence, Master",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "",
-              "series_bac_requises": ["C", "D"],
-              "autres_prerequis": "",
-              "metiers_vises_typiques": ["Encadrement des paysans", "Auto-emploi", "Cadres des Eaux et Forêts", "Encadrements des éleveurs"]
-            },
-            {
-              "nom_filiere": "Aménagement et Gestion des Ressources Naturelles",
-              "description_filiere": "",
-              "diplome_delivre": "Licence, Master",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "",
-              "series_bac_requises": ["C", "D"],
-              "autres_prerequis": "",
-              "metiers_vises_typiques": ["Encadrement des paysans", "Auto-emploi", "Cadres des Eaux et Forêts", "Encadrements des éleveurs"]
-            },
-            {
-              "nom_filiere": "Sociologie et Economie Rurales",
-              "description_filiere": "",
-              "diplome_delivre": "Licence, Master",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "",
-              "series_bac_requises": ["C", "D"],
-              "autres_prerequis": "",
-              "metiers_vises_typiques": ["Encadrement des paysans", "Auto-emploi", "Cadres des Eaux et Forêts", "Encadrements des éleveurs"]
-            }
-          ]
-        },
-        {
-          "nom_faculte_ecole": "Faculté des Sciences de la Santé / Faculté de Médecine (FM)",
-          "filieres": [
-            {
-              "nom_filiere": "Médecine Humaine",
-              "description_filiere": "",
+              "nom_filiere": "Médecine",
+              "description_filiere": "Formation médicale générale adaptée au contexte rural",
               "diplome_delivre": "Doctorat en Médecine",
               "duree_etudes_ans": 7,
-              "conditions_admission_texte": "",
+              "conditions_admission_texte": "Classement national très sélectif",
               "series_bac_requises": ["C", "D"],
-              "autres_prerequis": "",
-              "metiers_vises_typiques": ["Services publics ou privés de santé"]
-            },
-            {
-              "nom_filiere": "Santé publique et surveillance épidémiologique",
-              "description_filiere": "",
-              "diplome_delivre": "Licence",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "",
-              "series_bac_requises": ["C", "D"],
-              "autres_prerequis": "",
-              "metiers_vises_typiques": ["Services publics ou privés de santé"]
-            },
-            {
-              "nom_filiere": "Soins Infirmiers",
-              "description_filiere": "",
-              "diplome_delivre": "Licence en Soins infirmiers",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "",
-              "series_bac_requises": ["C", "D"],
-              "autres_prerequis": "",
-              "metiers_vises_typiques": ["Services publics ou privés de santé"]
-            },
-            {
-              "nom_filiere": "Soins obstétricaux",
-              "description_filiere": "",
-              "diplome_delivre": "Licence en Soins obstétricaux",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "",
-              "series_bac_requises": ["C", "D"],
-              "autres_prerequis": "",
-              "metiers_vises_typiques": ["Services publics ou privés de santé"]
+              "autres_prerequis": "Moyenne pondérée SVT, Maths, SPCT",
+              "metiers_vises_typiques": ["Médecin", "Médecin de brousse", "Médecin de santé publique"]
             }
           ]
         },
         {
-          "nom_faculte_ecole": "Faculté des Sciences Économiques et de Gestion (FASEG)",
+          "nom_faculte_ecole": "École Normale Supérieure",
+          "description": "Formation des enseignants du secondaire",
           "filieres": [
             {
-              "nom_filiere": "Finance et Comptabilité",
-              "description_filiere": "",
-              "diplome_delivre": "Licence, Master",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "Les détenteurs des BAC séries B, G2 et G3 doivent avoir un renforcement en Mathématiques",
-              "series_bac_requises": ["C", "D", "B", "G2", "G3"],
-              "autres_prerequis": "Renforcement en Mathématiques pour séries B, G2, G3",
-              "metiers_vises_typiques": ["Comptable", "Agent comptable des entreprises", "Cadres en Finances", "Expert comptable", "Gestionnaire de projets", "Cadres d'Entreprise commerciale", "Gestionnaire des Entreprises", "Administrateur des Ressources humaines", "Economiste de Développement"]
-            },
-            {
-              "nom_filiere": "Marketing et Management des Organisations",
-              "description_filiere": "",
-              "diplome_delivre": "Licence, Master",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "Les détenteurs des BAC séries B, G2 et G3 doivent avoir un renforcement en Mathématiques",
-              "series_bac_requises": ["C", "D", "B", "G2", "G3"],
-              "autres_prerequis": "Renforcement en Mathématiques pour séries B, G2, G3",
-              "metiers_vises_typiques": ["Comptable", "Agent comptable des entreprises", "Cadres en Finances", "Expert comptable", "Gestionnaire de projets", "Cadres d'Entreprise commerciale", "Gestionnaire des Entreprises", "Administrateur des Ressources humaines", "Economiste de Développement"]
-            },
-            {
-              "nom_filiere": "Economie et Finance Internationale",
-              "description_filiere": "",
-              "diplome_delivre": "Licence, Master",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "Les détenteurs des BAC séries B, G2 et G3 doivent avoir un renforcement en Mathématiques",
-              "series_bac_requises": ["C", "D", "B", "G2", "G3"],
-              "autres_prerequis": "Renforcement en Mathématiques pour séries B, G2, G3",
-              "metiers_vises_typiques": ["Comptable", "Agent comptable des entreprises", "Cadres en Finances", "Expert comptable", "Gestionnaire de projets", "Cadres d'Entreprise commerciale", "Gestionnaire des Entreprises", "Administrateur des Ressources humaines", "Economiste de Développement"]
-            },
-            {
-              "nom_filiere": "Analyse et Politiques Economiques",
-              "description_filiere": "",
-              "diplome_delivre": "Licence, Master",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "Les détenteurs des BAC séries B, G2 et G3 doivent avoir un renforcement en Mathématiques",
-              "series_bac_requises": ["C", "D", "B", "G2", "G3"],
-              "autres_prerequis": "Renforcement en Mathématiques pour séries B, G2, G3",
-              "metiers_vises_typiques": ["Comptable", "Agent comptable des entreprises", "Cadres en Finances", "Expert comptable", "Gestionnaire de projets", "Cadres d'Entreprise commerciale", "Gestionnaire des Entreprises", "Administrateur des Ressources humaines", "Economiste de Développement"]
-            }
-          ]
-        },
-        {
-          "nom_faculte_ecole": "Institut Universitaire de Technologie (IUT)",
-          "filieres": [
-            {
-              "nom_filiere": "Gestion des Banques",
-              "description_filiere": "",
-              "diplome_delivre": "Licence Professionnelle",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "",
-              "series_bac_requises": ["C", "D", "G2"],
-              "autres_prerequis": "",
-              "metiers_vises_typiques": ["Gestionnaires des Banques"]
-            },
-            {
-              "nom_filiere": "Gestion des Entreprises",
-              "description_filiere": "",
-              "diplome_delivre": "Licence Professionnelle",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "",
-              "series_bac_requises": ["C", "D", "G2"],
-              "autres_prerequis": "",
-              "metiers_vises_typiques": ["Gestionnaires des entreprises"]
-            },
-            {
-              "nom_filiere": "Gestion Commerciale",
-              "description_filiere": "",
-              "diplome_delivre": "Licence Professionnelle",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "",
-              "series_bac_requises": ["C", "D", "G2", "G3"],
-              "autres_prerequis": "",
-              "metiers_vises_typiques": ["Cadres commerciaux"]
-            },
-            {
-              "nom_filiere": "Informatique de Gestion",
-              "description_filiere": "",
-              "diplome_delivre": "Licence Professionnelle",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "",
-              "series_bac_requises": ["C", "D"],
-              "autres_prerequis": "",
-              "metiers_vises_typiques": ["Centres informatiques", "banques", "entreprises informatisées"]
-            },
-            {
-              "nom_filiere": "Gestion des Transports et Logistique",
-              "description_filiere": "",
-              "diplome_delivre": "Licence Professionnelle",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "",
-              "series_bac_requises": ["C", "D", "G2"],
-              "autres_prerequis": "",
-              "metiers_vises_typiques": ["Gestionnaires de transport et de logistique"]
-            }
-          ]
-        },
-        {
-          "nom_faculte_ecole": "Faculté des Lettres, Arts et Sciences Humaines (FLASH)",
-          "filieres": [
-            {
-              "nom_filiere": "Anglais",
-              "description_filiere": "",
-              "diplome_delivre": "Licence, Master",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "Classement",
-              "series_bac_requises": ["A", "B", "C", "D"],
-              "autres_prerequis": "Classement",
-              "metiers_vises_typiques": []
-            },
-            {
-              "nom_filiere": "Géographie et Aménagement du Territoire",
-              "description_filiere": "",
-              "diplome_delivre": "Licence, Master",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "Classement",
-              "series_bac_requises": ["A", "B", "C", "D"],
-              "autres_prerequis": "Classement",
-              "metiers_vises_typiques": []
-            },
-            {
-              "nom_filiere": "Histoire et Archéologie",
-              "description_filiere": "",
-              "diplome_delivre": "Licence, Master",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "Classement",
-              "series_bac_requises": ["A", "B", "C", "D"],
-              "autres_prerequis": "Classement",
-              "metiers_vises_typiques": []
-            },
-            {
-              "nom_filiere": "Lettres Modernes",
-              "description_filiere": "",
-              "diplome_delivre": "Licence, Master",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "Classement",
-              "series_bac_requises": ["A", "B", "C", "D"],
-              "autres_prerequis": "Classement",
-              "metiers_vises_typiques": []
-            },
-            {
-              "nom_filiere": "Sociologie-Anthropologie",
-              "description_filiere": "",
-              "diplome_delivre": "Licence, Master",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "Classement",
-              "series_bac_requises": ["A", "B", "C", "D"],
-              "autres_prerequis": "Classement",
-              "metiers_vises_typiques": []
+              "nom_filiere": "Formation d'Enseignants",
+              "description_filiere": "Formation pédagogique des enseignants",
+              "diplome_delivre": "CAPES",
+              "duree_etudes_ans": 2,
+              "conditions_admission_texte": "Licence + concours",
+              "series_bac_requises": ["A1", "A2", "C", "D"],
+              "autres_prerequis": "Licence dans la discipline + vocation enseignement",
+              "metiers_vises_typiques": ["Enseignant du secondaire", "Formateur", "Conseiller pédagogique"]
             }
           ]
         }
@@ -1337,859 +996,142 @@
       "nom_universite": "Université Nationale des Sciences, Technologies, Ingénierie et Mathématiques",
       "sigle": "UNSTIM",
       "statut": "Public",
-      "localisation": "Abomey (siège), Natitingou, Lokossa, et autres sites",
-      "site_web": "unstim.bj",
+      "localisation": "Abomey",
+      "site_web": "https://www.unstim.bj",
       "facultes_ecoles": [
         {
-          "nom_faculte_ecole": "Faculté des Sciences et Techniques (FAST) de Natitingou",
-          "filieres": [
-            {
-              "nom_filiere": "Mathématiques-Informatique",
-              "description_filiere": "",
-              "diplome_delivre": "Licence",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "",
-              "series_bac_requises": ["Bac scientifique", "littéraire", "technique/professionnel"],
-              "autres_prerequis": "Selon la filière choisie",
-              "metiers_vises_typiques": []
-            },
-            {
-              "nom_filiere": "Physique-Chimie",
-              "description_filiere": "",
-              "diplome_delivre": "Licence",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "",
-              "series_bac_requises": ["Bac scientifique", "littéraire", "technique/professionnel"],
-              "autres_prerequis": "Selon la filière choisie",
-              "metiers_vises_typiques": []
-            },
-            {
-              "nom_filiere": "Biotechnologie",
-              "description_filiere": "",
-              "diplome_delivre": "Licence",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "",
-              "series_bac_requises": ["Bac scientifique", "littéraire", "technique/professionnel"],
-              "autres_prerequis": "Selon la filière choisie",
-              "metiers_vises_typiques": []
-            },
-            {
-              "nom_filiere": "Sciences de la Vie et de la Terre",
-              "description_filiere": "",
-              "diplome_delivre": "Licence",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "",
-              "series_bac_requises": ["Bac scientifique", "littéraire", "technique/professionnel"],
-              "autres_prerequis": "Selon la filière choisie",
-              "metiers_vises_typiques": []
-            }
-          ]
-        },
-        {
-          "nom_faculte_ecole": "Institut National Supérieur de Technologie Industrielle (INSTI) de Lokossa",
-          "filieres": [
-            {
-              "nom_filiere": "Génie Civil : Bâtiment et Travaux Publics",
-              "description_filiere": "",
-              "diplome_delivre": "Licence Professionnelle, Master",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "",
-              "series_bac_requises": ["Bac scientifique", "littéraire", "technique/professionnel"],
-              "autres_prerequis": "Selon la filière choisie",
-              "metiers_vises_typiques": []
-            },
-            {
-              "nom_filiere": "Génie Electrique et Informatique : Electrotechnique et Electronique",
-              "description_filiere": "",
-              "diplome_delivre": "Licence Professionnelle, Master",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "",
-              "series_bac_requises": ["Bac scientifique", "littéraire", "technique/professionnel"],
-              "autres_prerequis": "Selon la filière choisie",
-              "metiers_vises_typiques": []
-            },
-            {
-              "nom_filiere": "Informatique et Télécoms",
-              "description_filiere": "",
-              "diplome_delivre": "Licence Professionnelle, Master",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "",
-              "series_bac_requises": ["Bac scientifique", "littéraire", "technique/professionnel"],
-              "autres_prerequis": "Selon la filière choisie",
-              "metiers_vises_typiques": []
-            },
-            {
-              "nom_filiere": "Génie Mécanique et Productique",
-              "description_filiere": "",
-              "diplome_delivre": "Licence Professionnelle, Master",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "",
-              "series_bac_requises": ["Bac scientifique", "littéraire", "technique/professionnel"],
-              "autres_prerequis": "Selon la filière choisie",
-              "metiers_vises_typiques": []
-            },
-            {
-              "nom_filiere": "Maintenance Automobile",
-              "description_filiere": "",
-              "diplome_delivre": "Licence Professionnelle, Master",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "",
-              "series_bac_requises": ["Bac scientifique", "littéraire", "technique/professionnel"],
-              "autres_prerequis": "Selon la filière choisie",
-              "metiers_vises_typiques": []
-            },
-            {
-              "nom_filiere": "Maintenance Industrielle",
-              "description_filiere": "",
-              "diplome_delivre": "Licence Professionnelle, Master",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "",
-              "series_bac_requises": ["Bac scientifique", "littéraire", "technique/professionnel"],
-              "autres_prerequis": "Selon la filière choisie",
-              "metiers_vises_typiques": []
-            },
-            {
-              "nom_filiere": "Energies Renouvelables et Systèmes Energétique",
-              "description_filiere": "",
-              "diplome_delivre": "Licence Professionnelle, Master",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "",
-              "series_bac_requises": ["Bac scientifique", "littéraire", "technique/professionnel"],
-              "autres_prerequis": "Selon la filière choisie",
-              "metiers_vises_typiques": []
-            },
-            {
-              "nom_filiere": "Froid et Climatisation et Systèmes Energétique",
-              "description_filiere": "",
-              "diplome_delivre": "Licence Professionnelle, Master",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "",
-              "series_bac_requises": ["Bac scientifique", "littéraire", "technique/professionnel"],
-              "autres_prerequis": "Selon la filière choisie",
-              "metiers_vises_typiques": []
-            }
-          ]
-        },
-        {
-          "nom_faculte_ecole": "École Nationale Supérieure de Génie Mathématique et Modélisation (ENSGMM)",
-          "filieres": [
-            {
-              "nom_filiere": "Modélisation et Simulation Numérique",
-              "description_filiere": "",
-              "diplome_delivre": "Diplôme d'Ingénieur",
-              "duree_etudes_ans": 5,
-              "conditions_admission_texte": "Licence en discipline scientifique ou classe préparatoire. Épreuves de sélection : Mathématiques générales (2h) et Analyse numérique et physique 1ère année (2h)",
-              "series_bac_requises": [],
-              "autres_prerequis": "Avoir une moyenne d'au moins 12/20 pour la licence ou pour la classe préparatoire. Condition d'âge : Avoir au plus 30 ans",
-              "metiers_vises_typiques": []
-            },
-            {
-              "nom_filiere": "Informatique, Logistique et Recherche Opérationnelle",
-              "description_filiere": "",
-              "diplome_delivre": "Diplôme d'Ingénieur",
-              "duree_etudes_ans": 5,
-              "conditions_admission_texte": "Licence en discipline scientifique ou classe préparatoire. Épreuves de sélection : Mathématiques générales (2h) et Analyse numérique et physique 1ère année (2h)",
-              "series_bac_requises": [],
-              "autres_prerequis": "Avoir une moyenne d'au moins 12/20 pour la licence ou pour la classe préparatoire. Condition d'âge : Avoir au plus 30 ans",
-              "metiers_vises_typiques": []
-            }
-          ]
-        },
-        {
-          "nom_faculte_ecole": "École Nationale Supérieure des Travaux Publics (ENSTP)",
+          "nom_faculte_ecole": "École Polytechnique d'Abomey-Calavi",
+          "description": "Formation d'ingénieurs de haut niveau",
           "filieres": [
             {
               "nom_filiere": "Génie Civil",
-              "description_filiere": "",
-              "diplome_delivre": "Licence, Diplôme d'Ingénieur",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "Concours (Culture générale, PCT ou RDM selon la série)",
-              "series_bac_requises": ["C", "D", "F4", "DT/BTP"],
-              "autres_prerequis": "Concours d'entrée",
-              "metiers_vises_typiques": []
+              "description_filiere": "Formation d'ingénieurs en construction et BTP",
+              "diplome_delivre": "Diplôme d'Ingénieur",
+              "duree_etudes_ans": 5,
+              "conditions_admission_texte": "Concours d'entrée très sélectif",
+              "series_bac_requises": ["C", "D", "E", "F4"],
+              "autres_prerequis": "Excellence en Maths et Physique",
+              "metiers_vises_typiques": ["Ingénieur Civil", "Architecte", "Chef de projet BTP", "Bureau d'études"]
             },
             {
-              "nom_filiere": "Hydraulique et Assainissement",
-              "description_filiere": "",
-              "diplome_delivre": "Licence, Diplôme d'Ingénieur",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "Concours (Culture générale, PCT ou RDM selon la série)",
-              "series_bac_requises": ["C", "D", "F4", "DT/BTP"],
-              "autres_prerequis": "Concours d'entrée",
-              "metiers_vises_typiques": []
-            },
-            {
-              "nom_filiere": "Architecture et Urbanisme",
-              "description_filiere": "",
-              "diplome_delivre": "Licence, Diplôme d'Ingénieur",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "Concours (Culture générale, PCT ou RDM selon la série)",
-              "series_bac_requises": ["C", "D", "F4", "DT/BTP"],
-              "autres_prerequis": "Concours d'entrée",
-              "metiers_vises_typiques": []
-            },
-            {
-              "nom_filiere": "Génie Géomatique Appliqué",
-              "description_filiere": "",
-              "diplome_delivre": "Licence, Diplôme d'Ingénieur",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "Concours (Culture générale, PCT ou RDM selon la série)",
-              "series_bac_requises": ["C", "D", "F4", "DT/BTP"],
-              "autres_prerequis": "Concours d'entrée",
-              "metiers_vises_typiques": []
-            }
-          ]
-        },
-        {
-          "nom_faculte_ecole": "École Nationale Supérieure de Génie Énergétique et Procédés (ENSGEP)",
-          "filieres": [
-            {
-              "nom_filiere": "Génie Énergétique",
-              "description_filiere": "",
-              "diplome_delivre": "Licence, Diplôme d'Ingénieur",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "",
-              "series_bac_requises": ["Bac scientifique", "technique"],
-              "autres_prerequis": "Selon la filière",
-              "metiers_vises_typiques": []
-            },
-            {
-              "nom_filiere": "Procédés Industriels",
-              "description_filiere": "",
-              "diplome_delivre": "Licence, Diplôme d'Ingénieur",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "",
-              "series_bac_requises": ["Bac scientifique", "technique"],
-              "autres_prerequis": "Selon la filière",
-              "metiers_vises_typiques": []
-            }
-          ]
-        },
-        {
-          "nom_faculte_ecole": "École Normale Supérieure de l'Enseignement Technique (ENSET)",
-          "filieres": [
-            {
-              "nom_filiere": "Formation des enseignants techniques (BAPET)",
-              "description_filiere": "Brevet d'Aptitude au Professorat de l'Enseignement Technique",
-              "diplome_delivre": "BAPET",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "Variables selon les spécialités",
-              "series_bac_requises": [],
-              "autres_prerequis": "Variables selon les spécialités",
-              "metiers_vises_typiques": []
-            },
-            {
-              "nom_filiere": "Formation des conseillers pédagogiques (CAPET)",
-              "description_filiere": "",
-              "diplome_delivre": "CAPET",
-              "duree_etudes_ans": 2,
-              "conditions_admission_texte": "Variables selon les spécialités",
-              "series_bac_requises": [],
-              "autres_prerequis": "Variables selon les spécialités",
-              "metiers_vises_typiques": []
-            }
-          ]
-        },
-        {
-          "nom_faculte_ecole": "École Nationale Supérieure des Biosciences et Biotechnologies Appliquées (ENSBBA)",
-          "filieres": [
-            {
-              "nom_filiere": "Biosciences",
-              "description_filiere": "",
-              "diplome_delivre": "Licence",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "",
-              "series_bac_requises": ["Bac scientifique"],
-              "autres_prerequis": "",
-              "metiers_vises_typiques": []
-            },
-            {
-              "nom_filiere": "Biotechnologies Appliquées",
-              "description_filiere": "",
-              "diplome_delivre": "Licence",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "",
-              "series_bac_requises": ["Bac scientifique"],
-              "autres_prerequis": "",
-              "metiers_vises_typiques": []
-            }
-          ]
-        },
-        {
-          "nom_faculte_ecole": "École Normale Supérieure (ENS)",
-          "filieres": [
-            {
-              "nom_filiere": "Formation des enseignants du secondaire (BAPES)",
-              "description_filiere": "Brevet d'Aptitude au Professorat de l'Enseignement Secondaire",
-              "diplome_delivre": "BAPES",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "Variables selon les disciplines",
-              "series_bac_requises": [],
-              "autres_prerequis": "Variables selon les disciplines",
-              "metiers_vises_typiques": []
-            },
-            {
-              "nom_filiere": "Formation des conseillers pédagogiques (CAPES)",
-              "description_filiere": "",
-              "diplome_delivre": "CAPES",
-              "duree_etudes_ans": 2,
-              "conditions_admission_texte": "Variables selon les disciplines",
-              "series_bac_requises": [],
-              "autres_prerequis": "Variables selon les disciplines",
-              "metiers_vises_typiques": []
-            }
-          ]
-        },
-        {
-          "nom_faculte_ecole": "Institut National Supérieur des Classes Préparatoires aux Études d'Ingénieur (INSPEI)",
-          "filieres": [
-            {
-              "nom_filiere": "Classes préparatoires aux écoles d'ingénieurs",
-              "description_filiere": "",
-              "diplome_delivre": "Certificat Préparatoire aux Etudes d'Ingénieur",
-              "duree_etudes_ans": 2,
-              "conditions_admission_texte": "",
+              "nom_filiere": "Génie Informatique",
+              "description_filiere": "Formation d'ingénieurs informaticiens",
+              "diplome_delivre": "Diplôme d'Ingénieur",
+              "duree_etudes_ans": 5,
+              "conditions_admission_texte": "Concours d'entrée très sélectif",
               "series_bac_requises": ["C", "D", "E"],
-              "autres_prerequis": "Séries scientifiques",
-              "metiers_vises_typiques": []
-            }
-          ]
-        },
-        {
-          "nom_faculte_ecole": "École Doctorale des Sciences, Technologies, Ingénierie et Mathématiques",
-          "filieres": [
-            {
-              "nom_filiere": "Sciences et Technologies (ST)",
-              "description_filiere": "Diverses formations doctorales en Sciences et Technologies",
-              "diplome_delivre": "Master, Doctorat",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "Détenir un diplôme de niveau compatible",
-              "series_bac_requises": [],
-              "autres_prerequis": "Diplôme de niveau compatible",
-              "metiers_vises_typiques": []
-            },
-            {
-              "nom_filiere": "Sciences et Techniques de l'Ingénieur (STI)",
-              "description_filiere": "Diverses formations doctorales en Sciences et Techniques de l'Ingénieur",
-              "diplome_delivre": "Master, Doctorat",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "Détenir un diplôme de niveau compatible",
-              "series_bac_requises": [],
-              "autres_prerequis": "Diplôme de niveau compatible",
-              "metiers_vises_typiques": []
+              "autres_prerequis": "Excellence en Maths et Sciences",
+              "metiers_vises_typiques": ["Ingénieur Informatique", "Architecte système", "Chef de projet IT", "R&D"]
             }
           ]
         }
       ]
     },
     {
-      "nom_universite": "Université Nationale d'Agriculture",
-      "sigle": "UNA",
+      "nom_universite": "Institut Régional de Santé Publique",
+      "sigle": "IRSP",
       "statut": "Public",
-      "localisation": "Kétou (siège), Sakété, Adjohoun, Idigny",
-      "site_web": "www.una.bj",
+      "localisation": "Ouidah",
+      "site_web": "https://www.irsp-uo.bj",
       "facultes_ecoles": [
         {
-          "nom_faculte_ecole": "École d'Horticulture et d'Aménagement des Espaces Verts (EHAEV)",
+          "nom_faculte_ecole": "École de Santé Publique",
+          "description": "Formation spécialisée en santé publique régionale",
           "filieres": [
             {
-              "nom_filiere": "Horticulture",
-              "description_filiere": "",
-              "diplome_delivre": "Licence Professionnelle, Master Professionnel",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "",
+              "nom_filiere": "Santé Publique",
+              "description_filiere": "Formation en épidémiologie et gestion de santé publique",
+              "diplome_delivre": "Master en Santé Publique",
+              "duree_etudes_ans": 2,
+              "conditions_admission_texte": "Licence en sciences de la santé",
               "series_bac_requises": ["C", "D"],
-              "autres_prerequis": "",
-              "metiers_vises_typiques": []
-            },
-            {
-              "nom_filiere": "Aménagement des Espaces Verts",
-              "description_filiere": "",
-              "diplome_delivre": "Licence Professionnelle, Master Professionnel",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "",
-              "series_bac_requises": ["C", "D"],
-              "autres_prerequis": "",
-              "metiers_vises_typiques": []
-            }
-          ]
-        },
-        {
-          "nom_faculte_ecole": "École de Foresterie Tropicale (EForT)",
-          "filieres": [
-            {
-              "nom_filiere": "Foresterie Tropicale",
-              "description_filiere": "",
-              "diplome_delivre": "Licence Professionnelle, Master Professionnel",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "Attestation du baccalauréat, deux photos d'identité, photocopie du certificat de nationalité, récépissé d'inscription",
-              "series_bac_requises": ["C", "D", "DEAT"],
-              "autres_prerequis": "Documents requis : Attestation du baccalauréat, deux photos d'identité, photocopie du certificat de nationalité, récépissé d'inscription",
-              "metiers_vises_typiques": []
-            },
-            {
-              "nom_filiere": "Aménagement et Gestion des Ressources Forestières",
-              "description_filiere": "",
-              "diplome_delivre": "Licence Professionnelle, Master Professionnel",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "Attestation du baccalauréat, deux photos d'identité, photocopie du certificat de nationalité, récépissé d'inscription",
-              "series_bac_requises": ["C", "D", "DEAT"],
-              "autres_prerequis": "Documents requis : Attestation du baccalauréat, deux photos d'identité, photocopie du certificat de nationalité, récépissé d'inscription",
-              "metiers_vises_typiques": []
-            },
-            {
-              "nom_filiere": "Gestion et Valorisation de la Faune et des Parcours",
-              "description_filiere": "",
-              "diplome_delivre": "Licence Professionnelle, Master Professionnel",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "Attestation du baccalauréat, deux photos d'identité, photocopie du certificat de nationalité, récépissé d'inscription",
-              "series_bac_requises": ["C", "D", "DEAT"],
-              "autres_prerequis": "Documents requis : Attestation du baccalauréat, deux photos d'identité, photocopie du certificat de nationalité, récépissé d'inscription",
-              "metiers_vises_typiques": []
-            }
-          ]
-        },
-        {
-          "nom_faculte_ecole": "École de Gestion et de Production Végétale et Semencière (EGPVS)",
-          "filieres": [
-            {
-              "nom_filiere": "Gestion et Production Végétale",
-              "description_filiere": "",
-              "diplome_delivre": "Licence Professionnelle, Master Professionnel",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "",
-              "series_bac_requises": ["C", "D"],
-              "autres_prerequis": "",
-              "metiers_vises_typiques": []
-            },
-            {
-              "nom_filiere": "Production Semencière",
-              "description_filiere": "",
-              "diplome_delivre": "Licence Professionnelle, Master Professionnel",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "",
-              "series_bac_requises": ["C", "D"],
-              "autres_prerequis": "",
-              "metiers_vises_typiques": []
-            },
-            {
-              "nom_filiere": "Biotechnologies Végétales et Production de Semences",
-              "description_filiere": "",
-              "diplome_delivre": "Licence Professionnelle, Master Professionnel",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "",
-              "series_bac_requises": ["C", "D"],
-              "autres_prerequis": "",
-              "metiers_vises_typiques": []
-            },
-            {
-              "nom_filiere": "Protection Ecologique et Durable des Cultures",
-              "description_filiere": "",
-              "diplome_delivre": "Licence Professionnelle, Master Professionnel",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "",
-              "series_bac_requises": ["C", "D"],
-              "autres_prerequis": "",
-              "metiers_vises_typiques": []
-            },
-            {
-              "nom_filiere": "Gestion et Conservation des Sols",
-              "description_filiere": "",
-              "diplome_delivre": "Licence Professionnelle, Master Professionnel",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "",
-              "series_bac_requises": ["C", "D"],
-              "autres_prerequis": "",
-              "metiers_vises_typiques": []
-            }
-          ]
-        },
-        {
-          "nom_faculte_ecole": "École d'Aquaculture",
-          "filieres": [
-            {
-              "nom_filiere": "Aquaculture",
-              "description_filiere": "",
-              "diplome_delivre": "Licence Professionnelle, Master Professionnel",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "Étude de dossiers par la Commission Universitaire d'Orientation",
-              "series_bac_requises": [],
-              "autres_prerequis": "Étude de dossiers par la Commission Universitaire d'Orientation",
-              "metiers_vises_typiques": []
-            },
-            {
-              "nom_filiere": "Management des Ressources Halieutiques",
-              "description_filiere": "",
-              "diplome_delivre": "Licence Professionnelle, Master Professionnel",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "Étude de dossiers par la Commission Universitaire d'Orientation",
-              "series_bac_requises": [],
-              "autres_prerequis": "Étude de dossiers par la Commission Universitaire d'Orientation",
-              "metiers_vises_typiques": []
-            }
-          ]
-        },
-        {
-          "nom_faculte_ecole": "École de Sociologie Rurale et de Vulgarisation Agricole",
-          "filieres": [
-            {
-              "nom_filiere": "Sociologie Rurale",
-              "description_filiere": "",
-              "diplome_delivre": "Licence Professionnelle, Master Professionnel",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "",
-              "series_bac_requises": ["C", "D", "E", "DEAT"],
-              "autres_prerequis": "Titulaires d'un Diplôme d'Etudes Agricoles Tropicales (DEAT)",
-              "metiers_vises_typiques": []
-            },
-            {
-              "nom_filiere": "Vulgarisation Agricole",
-              "description_filiere": "",
-              "diplome_delivre": "Licence Professionnelle, Master Professionnel",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "",
-              "series_bac_requises": ["C", "D", "E", "DEAT"],
-              "autres_prerequis": "Titulaires d'un Diplôme d'Etudes Agricoles Tropicales (DEAT)",
-              "metiers_vises_typiques": []
-            },
-            {
-              "nom_filiere": "Planification de Développement Agricole",
-              "description_filiere": "",
-              "diplome_delivre": "Licence Professionnelle, Master Professionnel",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "",
-              "series_bac_requises": ["C", "D", "E", "DEAT"],
-              "autres_prerequis": "Titulaires d'un Diplôme d'Etudes Agricoles Tropicales (DEAT)",
-              "metiers_vises_typiques": []
-            },
-            {
-              "nom_filiere": "Vulgarisation et Gestion des Innovations Agricole",
-              "description_filiere": "",
-              "diplome_delivre": "Licence Professionnelle, Master Professionnel",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "",
-              "series_bac_requises": ["C", "D", "E", "DEAT"],
-              "autres_prerequis": "Titulaires d'un Diplôme d'Etudes Agricoles Tropicales (DEAT)",
-              "metiers_vises_typiques": []
-            }
-          ]
-        },
-        {
-          "nom_faculte_ecole": "École d'Agrobusiness et de Politiques Agricoles",
-          "filieres": [
-            {
-              "nom_filiere": "Finance agricole",
-              "description_filiere": "",
-              "diplome_delivre": "Licence Professionnelle, Master Professionnel",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "",
-              "series_bac_requises": ["C", "D"],
-              "autres_prerequis": "",
-              "metiers_vises_typiques": []
-            },
-            {
-              "nom_filiere": "Gestion des Exploitations Agricoles et des Entreprises Agroalimentaires",
-              "description_filiere": "",
-              "diplome_delivre": "Licence Professionnelle, Master Professionnel",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "",
-              "series_bac_requises": ["C", "D"],
-              "autres_prerequis": "",
-              "metiers_vises_typiques": []
-            },
-            {
-              "nom_filiere": "Marketing des Intrants et Produits Agricoles",
-              "description_filiere": "",
-              "diplome_delivre": "Licence Professionnelle, Master Professionnel",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "",
-              "series_bac_requises": ["C", "D"],
-              "autres_prerequis": "",
-              "metiers_vises_typiques": []
-            }
-          ]
-        },
-        {
-          "nom_faculte_ecole": "École de Génie Rural",
-          "filieres": [
-            {
-              "nom_filiere": "Agroéquipement",
-              "description_filiere": "",
-              "diplome_delivre": "Licence Professionnelle, Master Professionnel",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "",
-              "series_bac_requises": ["C", "D"],
-              "autres_prerequis": "",
-              "metiers_vises_typiques": []
-            },
-            {
-              "nom_filiere": "Electrification Rurale et Energies renouvelables",
-              "description_filiere": "",
-              "diplome_delivre": "Licence Professionnelle, Master Professionnel",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "",
-              "series_bac_requises": ["C", "D"],
-              "autres_prerequis": "",
-              "metiers_vises_typiques": []
-            },
-            {
-              "nom_filiere": "Infrastructure Rurale et Assainissement",
-              "description_filiere": "",
-              "diplome_delivre": "Licence Professionnelle, Master Professionnel",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "",
-              "series_bac_requises": ["C", "D"],
-              "autres_prerequis": "",
-              "metiers_vises_typiques": []
-            }
-          ]
-        },
-        {
-          "nom_faculte_ecole": "École Doctorale des Sciences Agronomiques et de l'Eau",
-          "filieres": [
-            {
-              "nom_filiere": "Sciences Végétale, Horticole et Forestière",
-              "description_filiere": "",
-              "diplome_delivre": "Doctorat",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "Dépôt d'un dossier de demande d'inscription en thèse et avis favorable du Comité Pédagogique et Scientifique de l'Ecole Doctorale",
-              "series_bac_requises": [],
-              "autres_prerequis": "Master dans une discipline pertinente",
-              "metiers_vises_typiques": []
-            },
-            {
-              "nom_filiere": "Sciences Animale et Halieutique",
-              "description_filiere": "",
-              "diplome_delivre": "Doctorat",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "Dépôt d'un dossier de demande d'inscription en thèse et avis favorable du Comité Pédagogique et Scientifique de l'Ecole Doctorale",
-              "series_bac_requises": [],
-              "autres_prerequis": "Master dans une discipline pertinente",
-              "metiers_vises_typiques": []
-            },
-            {
-              "nom_filiere": "Nutrition et Sciences Alimentaires",
-              "description_filiere": "",
-              "diplome_delivre": "Doctorat",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "Dépôt d'un dossier de demande d'inscription en thèse et avis favorable du Comité Pédagogique et Scientifique de l'Ecole Doctorale",
-              "series_bac_requises": [],
-              "autres_prerequis": "Master dans une discipline pertinente",
-              "metiers_vises_typiques": []
-            },
-            {
-              "nom_filiere": "Economie et Sociologie Rurales",
-              "description_filiere": "",
-              "diplome_delivre": "Doctorat",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "Dépôt d'un dossier de demande d'inscription en thèse et avis favorable du Comité Pédagogique et Scientifique de l'Ecole Doctorale",
-              "series_bac_requises": [],
-              "autres_prerequis": "Master dans une discipline pertinente",
-              "metiers_vises_typiques": []
-            },
-            {
-              "nom_filiere": "Génie rural",
-              "description_filiere": "",
-              "diplome_delivre": "Doctorat",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "Dépôt d'un dossier de demande d'inscription en thèse et avis favorable du Comité Pédagogique et Scientifique de l'Ecole Doctorale",
-              "series_bac_requises": [],
-              "autres_prerequis": "Master dans une discipline pertinente",
-              "metiers_vises_typiques": []
+              "autres_prerequis": "Expérience dans le domaine de la santé",
+              "metiers_vises_typiques": ["Épidémiologiste", "Gestionnaire de santé", "Expert en santé publique"]
             }
           ]
         }
       ]
     },
     {
-      "nom_universite": "UATM GASA FORMATION",
-      "sigle": "UATM",
+      "nom_universite": "Université Catholique de l'Afrique de l'Ouest - Unité du Bénin",
+      "sigle": "UCAO",
       "statut": "Privé Agréé",
       "localisation": "Cotonou",
-      "site_web": "",
+      "site_web": "https://www.ucao.edu.sn",
       "facultes_ecoles": [
         {
-          "nom_faculte_ecole": "Faculté des Sciences Juridiques et Politiques",
+          "nom_faculte_ecole": "Institut de Théologie",
+          "description": "Formation théologique et pastorale",
           "filieres": [
             {
-              "nom_filiere": "Sciences Juridiques",
-              "description_filiere": "",
-              "diplome_delivre": "Licence Professionnelle, Master",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "Diplôme du Baccalauréat ou équivalent",
-              "series_bac_requises": ["Toutes séries"],
-              "autres_prerequis": "Constitution d'un dossier : Acte de naissance, Certificat de nationalité, Derniers relevés de notes, Diplôme du Baccalauréat, Quittance des frais d'inscription (5 000–15 000 Francs CFA)",
-              "metiers_vises_typiques": []
-            },
-            {
-              "nom_filiere": "Droit",
-              "description_filiere": "",
-              "diplome_delivre": "Master",
-              "duree_etudes_ans": 2,
-              "conditions_admission_texte": "Relevé de notes universitaire ou justificatif de travail professionnel",
-              "series_bac_requises": [],
-              "autres_prerequis": "Licence ou équivalent",
-              "metiers_vises_typiques": []
+              "nom_filiere": "Théologie",
+              "description_filiere": "Formation théologique et pastorale approfondie",
+              "diplome_delivre": "Licence en Théologie",
+              "duree_etudes_ans": 4,
+              "conditions_admission_texte": "Baccalauréat + vocation religieuse",
+              "series_bac_requises": ["A1", "A2", "B"],
+              "autres_prerequis": "Formation religieuse préalable et discernement vocationnel",
+              "metiers_vises_typiques": ["Prêtre", "Animateur pastoral", "Formateur religieux"]
             }
           ]
         },
         {
-          "nom_faculte_ecole": "Faculté des Sciences Agronomiques",
+          "nom_faculte_ecole": "Faculté de Philosophie",
+          "description": "Formation philosophique approfondie",
           "filieres": [
             {
-              "nom_filiere": "Agronomie",
-              "description_filiere": "",
-              "diplome_delivre": "Licence Professionnelle, Master",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "Diplôme du Baccalauréat ou équivalent",
-              "series_bac_requises": ["C", "D"],
-              "autres_prerequis": "Constitution d'un dossier",
-              "metiers_vises_typiques": []
-            },
-            {
-              "nom_filiere": "Sciences Agronomiques",
-              "description_filiere": "",
-              "diplome_delivre": "Master",
-              "duree_etudes_ans": 2,
-              "conditions_admission_texte": "Relevé de notes universitaire ou justificatif de travail professionnel",
-              "series_bac_requises": [],
-              "autres_prerequis": "Licence ou équivalent",
-              "metiers_vises_typiques": []
+              "nom_filiere": "Philosophie",
+              "description_filiere": "Formation en philosophie générale et africaine",
+              "diplome_delivre": "Master en Philosophie",
+              "duree_etudes_ans": 5,
+              "conditions_admission_texte": "Baccalauréat littéraire de préférence",
+              "series_bac_requises": ["A1", "A2", "B"],
+              "autres_prerequis": "Capacités de réflexion abstraite et d'analyse",
+              "metiers_vises_typiques": ["Enseignant", "Chercheur", "Conseiller", "Médiateur"]
             }
           ]
-        },
-        {
-          "nom_faculte_ecole": "Faculté des Sciences de Gestion et Management",
-          "filieres": [
-            {
-              "nom_filiere": "Transport et Logistique et maritime",
-              "description_filiere": "",
-              "diplome_delivre": "Licence Professionnelle",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "Diplôme du Baccalauréat ou équivalent",
-              "series_bac_requises": ["Toutes séries"],
-              "autres_prerequis": "Constitution d'un dossier",
-              "metiers_vises_typiques": []
-            },
-            {
-              "nom_filiere": "Management des Ressources Humaines",
-              "description_filiere": "",
-              "diplome_delivre": "Licence Professionnelle, Master",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "Diplôme du Baccalauréat ou équivalent",
-              "series_bac_requises": ["Toutes séries"],
-              "autres_prerequis": "Constitution d'un dossier",
-              "metiers_vises_typiques": []
-            },
-            {
-              "nom_filiere": "Management Communication et Commerce",
-              "description_filiere": "",
-              "diplome_delivre": "Licence Professionnelle, Master",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "Diplôme du Baccalauréat ou équivalent",
-              "series_bac_requises": ["Toutes séries"],
-              "autres_prerequis": "Constitution d'un dossier",
-              "metiers_vises_typiques": []
-            },
-            {
-              "nom_filiere": "Marketing, Communication et Commerce (MCC)",
-              "description_filiere": "",
-              "diplome_delivre": "Master",
-              "duree_etudes_ans": 2,
-              "conditions_admission_texte": "Relevé de notes universitaire ou justificatif de travail professionnel",
-              "series_bac_requises": [],
-              "autres_prerequis": "Licence ou équivalent",
-              "metiers_vises_typiques": []
-            },
-            {
-              "nom_filiere": "Entrepreneuriat et Gestion des Projets",
-              "description_filiere": "",
-              "diplome_delivre": "Licence Professionnelle",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "Diplôme du Baccalauréat ou équivalent",
-              "series_bac_requises": ["Toutes séries"],
-              "autres_prerequis": "Constitution d'un dossier",
-              "metiers_vises_typiques": []
-            }
-          ]
-        },
-        {
-          "nom_faculte_ecole": "Faculté des Sciences Économiques et Financières",
-          "filieres": [
-            {
-              "nom_filiere": "Finance Comptabilité et Audit",
-              "description_filiere": "",
-              "diplome_delivre": "Licence Professionnelle, Master",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "Diplôme du Baccalauréat ou équivalent",
-              "series_bac_requises": ["C", "D", "G2"],
-              "autres_prerequis": "Constitution d'un dossier",
-              "metiers_vises_typiques": []
-            },
-            {
-              "nom_filiere": "Banque Finance Assurance",
-              "description_filiere": "",
-              "diplome_delivre": "Licence Professionnelle, Master",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "Diplôme du Baccalauréat ou équivalent",
-              "series_bac_requises": ["C", "D", "G2"],
-              "autres_prerequis": "Constitution d'un dossier",
-              "metiers_vises_typiques": []
-            },
-            {
-              "nom_filiere": "Finance, Comptabilité et Audit (FCA)",
-              "description_filiere": "",
-              "diplome_delivre": "Master",
-              "duree_etudes_ans": 2,
-              "conditions_admission_texte": "Relevé de notes universitaire ou justificatif de travail professionnel",
-              "series_bac_requises": [],
-              "autres_prerequis": "Licence ou équivalent",
-              "metiers_vises_typiques": []
-            },
-            {
-              "nom_filiere": "Banque, Finance et Assurance (BFA)",
-              "description_filiere": "",
-              "diplome_delivre": "Master",
-              "duree_etudes_ans": 2,
-              "conditions_admission_texte": "Relevé de notes universitaire ou justificatif de travail professionnel",
-              "series_bac_requises": [],
-              "autres_prerequis": "Licence ou équivalent",
-              "metiers_vises_typiques": []
-            }
-          ]
-        },
-        {
-          "nom_faculte_ecole": "Faculté des Sciences et Technologies",
-          "filieres": [
-            {
-              "nom_filiere": "Réseaux Informatique et Télécommunication",
-              "description_filiere": "",
-              "diplome_delivre": "Licence Professionnelle, Master",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "Diplôme du Baccalauréat ou équivalent",
-              "series_bac_requises": ["C", "D"],
-              "autres_prerequis": "Constitution d'un dossier",
-              "metiers_vises_typiques": []
-            },
-            {
-              "nom_filiere": "Système Informatique et Logiciel",
-              "description_filiere": "",
-              "diplome_delivre": "Licence Professionnelle, Master",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "Diplôme du Baccalauréat ou équivalent",
-              "series_bac_requises": ["C", "D"],
-              "autres_prerequis": "Constitution d'un dossier",
-              "metiers_vises_typiques": []
-            },
-            {
-              "nom_filiere": "Système Industriel",
-              "description_filiere": "",
-              "diplome_delivre": "Licence Professionnelle, Master",
-              "duree_etudes_ans": 3,
-              "conditions_admission_texte": "Diplôme du Baccalauréat ou équivalent",
-              "series_bac_requises": ["C", "D"],
-              "autres_prerequis": "Constitution d'un dossier",
-              "metiers_vises_typiques": []
-            },
-            {
-              "
+        }
+      ]
+    }
+  ],
+  "informations_pratiques": {
+    "plateforme_inscription": "https://apresmonbac.bj",
+    "formule_classement": "M = (m1*x + m2*y + m3*z) / (x+y+z)",
+    "types_de_places": [
+      {
+        "type": "Bourse (allocation)",
+        "description": "Formation gratuite avec bourse d'études"
+      },
+      {
+        "type": "Formation partiellement payante (FPP)",
+        "description": "Aide universitaire avec frais réduits"
+      },
+      {
+        "type": "Formation entièrement payante (FEP)",
+        "description": "Frais de scolarité complets"
+      }
+    ],
+    "regles_importantes": [
+      "Après sélection nationale, pas de transfert inter-universités",
+      "Changement de filière = perte de l'allocation",
+      "Inclure au moins une formation en Faculté Classique parmi les 3 choix",
+      "Bacheliers étrangers: dossier physique obligatoire"
+    ],
+    "procedure_inscription": {
+      "etapes": [
+        "Créer le compte sur apresmonbac.bj avec numéro de table du BAC",
+        "Activer le compte avec informations personnelles",
+        "Se connecter et effectuer 3 choix de filières",
+        "Modifier si nécessaire puis soumettre",
+        "Attendre résultats après délibération nationale"
+      ],
+      "documents_requis": [
+        "Numéro de table du baccalauréat",
+        "Note en français",
+        "Date de naissance exacte",
+        "Email valide",
+        "Numéro de téléphone"
+      ]
+    }
+  }
+}

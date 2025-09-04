@@ -78,7 +78,21 @@ class KnowledgeBaseLoader:
     
     def __init__(self, fichier_path: str = "knowledge_base_benin_v2.json"):
         """Initialise le chargeur avec le fichier de base de connaissances"""
-        self.fichier_path = fichier_path
+        # Assurer un chemin absolu pour éviter les problèmes de contexte Streamlit
+        if not os.path.isabs(fichier_path):
+            # Chercher dans le répertoire courant et le répertoire du script
+            current_dir = os.getcwd()
+            script_dir = os.path.dirname(os.path.abspath(__file__))
+            
+            if os.path.exists(os.path.join(current_dir, fichier_path)):
+                self.fichier_path = os.path.join(current_dir, fichier_path)
+            elif os.path.exists(os.path.join(script_dir, fichier_path)):
+                self.fichier_path = os.path.join(script_dir, fichier_path)
+            else:
+                self.fichier_path = fichier_path  # Garder le chemin original
+        else:
+            self.fichier_path = fichier_path
+            
         self.knowledge_base: Optional[KnowledgeBase] = None
         self.charger_base_connaissances()
     
@@ -101,13 +115,22 @@ class KnowledgeBaseLoader:
                 self.knowledge_base = self._load_raw_data(data)
                 
         except FileNotFoundError:
-            st.error(f"Fichier {self.fichier_path} non trouvé.")
+            try:
+                st.error(f"Fichier {self.fichier_path} non trouvé.")
+            except:
+                print(f"❌ Fichier {self.fichier_path} non trouvé.")
             self.knowledge_base = KnowledgeBase()
         except json.JSONDecodeError as e:
-            st.error(f"Erreur de format JSON : {e}")
+            try:
+                st.error(f"Erreur de format JSON : {e}")
+            except:
+                print(f"❌ Erreur de format JSON : {e}")
             self.knowledge_base = KnowledgeBase()
         except Exception as e:
-            st.error(f"Erreur lors du chargement : {e}")
+            try:
+                st.error(f"Erreur lors du chargement : {e}")
+            except:
+                print(f"❌ Erreur lors du chargement : {e}")
             self.knowledge_base = KnowledgeBase()
     
     def _load_raw_data(self, data: Dict) -> KnowledgeBase:

@@ -7,6 +7,8 @@ import streamlit as st
 import json
 from typing import Dict, List, Optional
 import traceback
+import logging
+from datetime import datetime
 
 # Import des modules personnalisés
 from knowledge_base_loader import KnowledgeBaseLoader
@@ -62,15 +64,46 @@ def main():
     st.markdown('<h1 class="main-title">🎓 Système d\'Orientation Professionnelle du Bénin</h1>', 
                 unsafe_allow_html=True)
     
-    # Initialisation des composants
+    # Initialisation des composants avec gestion d'erreur robuste
     if 'knowledge_base' not in st.session_state:
         try:
-            st.session_state.knowledge_base = KnowledgeBaseLoader()
-            st.session_state.recommendation_engine = RecommendationEngine(st.session_state.knowledge_base)
-            st.session_state.llm_interface = LLMInterface()
+            with st.spinner("Chargement de la base de connaissances..."):
+                st.session_state.knowledge_base = KnowledgeBaseLoader()
+                st.session_state.recommendation_engine = RecommendationEngine(st.session_state.knowledge_base)
+                st.session_state.llm_interface = LLMInterface()
+                
+                # Validation de la base de connaissances
+                validation = st.session_state.knowledge_base.valider_base_connaissances()
+                if validation["erreurs"]:
+                    st.error("⚠️ Problèmes détectés dans la base de connaissances:")
+                    for erreur in validation["erreurs"]:
+                        st.error(f"• {erreur}")
+                
+                if validation["avertissements"]:
+                    with st.expander("Avertissements (cliquez pour voir les détails)"):
+                        for avertissement in validation["avertissements"]:
+                            st.warning(f"• {avertissement}")
+                            
+        except FileNotFoundError:
+            st.error("❌ Fichier de base de connaissances non trouvé. L'application fonctionne en mode dégradé.")
+            st.info("💡 Un fichier exemple va être créé automatiquement.")
+            try:
+                st.session_state.knowledge_base = KnowledgeBaseLoader()
+                st.session_state.recommendation_engine = RecommendationEngine(st.session_state.knowledge_base)
+                st.session_state.llm_interface = LLMInterface()
+            except Exception as e:
+                st.error(f"Impossible d'initialiser l'application : {str(e)}")
+                st.stop()
         except Exception as e:
-            st.error(f"Erreur lors de l'initialisation : {str(e)}")
-            st.stop()
+            st.error(f"❌ Erreur lors de l'initialisation : {str(e)}")
+            st.info("L'application essaie de continuer en mode dégradé...")
+            try:
+                st.session_state.knowledge_base = None
+                st.session_state.recommendation_engine = None
+                st.session_state.llm_interface = LLMInterface()
+            except:
+                st.error("Impossible de démarrer l'application.")
+                st.stop()
     
     # Sidebar pour les informations du profil
     with st.sidebar:
@@ -121,6 +154,24 @@ def main():
         
         # Bouton d'analyse
         analyser = st.button("🔍 Analyser mon profil", type="primary")
+        
+        # Section debug et test API
+        with st.expander("⚙️ Outils de diagnostic"):
+            if st.button("🔧 Tester la connexion API"):
+                with st.spinner("Test de la connexion API..."):
+                    test_result = st.session_state.llm_interface.tester_connexion()
+                    if test_result["success"]:
+                        st.success("✅ Connexion API fonctionnelle")
+                        st.info(f"Réponse: {test_result.get('response', 'N/A')}")
+                    else:
+                        st.error(f"❌ Problème de connexion: {test_result['message']}")
+            
+            if st.button("📊 Statistiques de la base"):
+                if st.session_state.knowledge_base:
+                    stats = st.session_state.knowledge_base.get_statistics()
+                    st.json(stats)
+                else:
+                    st.error("Base de connaissances non disponible")
     
     # Zone principale de contenu
     if analyser and carriere_envisagee:
@@ -137,7 +188,11 @@ def main():
                 }
                 
                 # Génération des recommandations
-                recommandations = st.session_state.recommendation_engine.generer_recommandations(profil_utilisateur)
+                if st.session_state.recommendation_engine:
+                    recommandations = st.session_state.recommendation_engine.generer_recommandations(profil_utilisateur)
+                else:
+                    st.warning("⚠️ Moteur de recommandation indisponible. Analyse basique uniquement.")
+                    recommandations = {"mode": "degrade"}
                 
                 # Analyse avec l'IA
                 analyse_ia = st.session_state.llm_interface.analyser_profil(
@@ -147,6 +202,16 @@ def main():
                 
                 # Affichage des résultats
                 afficher_resultats(profil_utilisateur, recommandations, analyse_ia)
+                
+                # Option d'export des résultats
+                if st.button("📄 Exporter le rapport d'analyse"):
+                    rapport = generer_rapport_export(profil_utilisateur, recommandations, analyse_ia)
+                    st.download_button(
+                        label="💾 Télécharger le rapport (TXT)",
+                        data=rapport,
+                        file_name=f"rapport_orientation_{datetime.now().strftime('%Y%m%d_%H%M')}.txt",
+                        mime="text/plain"
+                    )
                 
             except Exception as e:
                 st.error(f"Erreur lors de l'analyse : {str(e)}")
@@ -212,14 +277,14 @@ def afficher_resultats(profil: Dict, recommandations: Dict, analyse_ia: str):
     
     col1, col2 = st.columns(2)
     with col1:
-        if profil['nom'] and profil['prenom']:
+        if profil.get('nom') and profil.get('prenom'):
             st.write(f"**Nom :** {profil['prenom']} {profil['nom']}")
         st.write(f"**Statut :** {profil['statut']}")
-        if profil['serie_bac']:
+        if profil.get('serie_bac'):
             st.write(f"**Série BAC :** {profil['serie_bac']}")
     
     with col2:
-        if profil['filiere_actuelle']:
+        if profil.get('filiere_actuelle'):
             st.write(f"**Filière actuelle :** {profil['filiere_actuelle']}")
         st.write(f"**Carrière envisagée :** {profil['carriere_envisagee']}")
     
@@ -228,6 +293,11 @@ def afficher_resultats(profil: Dict, recommandations: Dict, analyse_ia: str):
     st.markdown('<div class="recommendation-card">', unsafe_allow_html=True)
     st.markdown(analyse_ia)
     st.markdown('</div>', unsafe_allow_html=True)
+    
+    # Vérification du mode dégradé
+    if recommandations.get("mode") == "degrade":
+        st.warning("⚠️ Analyse en mode dégradé - Données limitées disponibles")
+        return
     
     # Universités recommandées
     if recommandations.get('universites_recommandees'):
@@ -243,11 +313,13 @@ def afficher_resultats(profil: Dict, recommandations: Dict, analyse_ia: str):
                    unsafe_allow_html=True)
         
         for i, carriere in enumerate(recommandations['carrieres_alternatives'][:3], 1):
-            with st.expander(f"{i}. {carriere['nom_metier']}"):
-                st.write(f"**Secteur :** {carriere['secteur_activite']}")
-                st.write(f"**Description :** {carriere['description']}")
-                if carriere.get('niveau_demande_marche'):
-                    st.write(f"**Demande sur le marché :** {carriere['niveau_demande_marche']}")
+            with st.expander(f"{i}. {carriere.nom_metier}"):
+                st.write(f"**Secteur :** {carriere.secteur_activite}")
+                st.write(f"**Description :** {carriere.description}")
+                if carriere.niveau_demande_marche:
+                    st.write(f"**Demande sur le marché :** {carriere.niveau_demande_marche}")
+                if carriere.pertinence_realites_africaines_benin:
+                    st.write(f"**Pertinence au Bénin :** {carriere.pertinence_realites_africaines_benin}")
 
 def afficher_carte_universite(universite_info: Dict):
     """Affiche les informations d'une université sous forme de carte"""
@@ -293,6 +365,76 @@ def afficher_carte_universite(universite_info: Dict):
                     st.write(f"**Métiers visés :** {', '.join(filiere['metiers_vises_typiques'])}")
     
     st.markdown('</div>', unsafe_allow_html=True)
+
+def generer_rapport_export(profil: Dict, recommandations: Dict, analyse_ia: str) -> str:
+    """Génère un rapport d'analyse exportable"""
+    
+    rapport = f"""
+RAPPORT D'ORIENTATION PROFESSIONNELLE - BÉNIN
+Généré le {datetime.now().strftime('%d/%m/%Y à %H:%M')}
+================================================
+
+PROFIL ÉTUDIANT
+---------------
+Nom: {profil.get('prenom', '') + ' ' + profil.get('nom', '') if profil.get('nom') else 'Non renseigné'}
+Statut: {profil['statut']}
+Série BAC: {profil.get('serie_bac', 'Non applicable')}
+Filière actuelle: {profil.get('filiere_actuelle', 'Non applicable')}
+Carrière envisagée: {profil['carriere_envisagee']}
+
+ANALYSE PERSONNALISÉE
+--------------------
+{analyse_ia}
+
+"""
+    
+    if recommandations.get("mode") != "degrade":
+        # Universités recommandées
+        if recommandations.get('universites_recommandees'):
+            rapport += "\nUNIVERSITÉS ET FILIÈRES RECOMMANDÉES\n"
+            rapport += "====================================\n"
+            
+            for i, univ in enumerate(recommandations['universites_recommandees'][:5], 1):
+                rapport += f"\n{i}. {univ['nom_universite']} ({univ['statut']})\n"
+                rapport += f"   Localisation: {univ.get('localisation', 'Non spécifiée')}\n"
+                
+                if univ.get('filieres_recommandees'):
+                    rapport += "   Filières adaptées:\n"
+                    for filiere in univ['filieres_recommandees'][:3]:
+                        rapport += f"   • {filiere['nom_filiere']} ({filiere['diplome_delivre']})\n"
+                        rapport += f"     Durée: {filiere['duree_etudes_ans']} ans\n"
+                        if filiere.get('series_bac_requises'):
+                            rapport += f"     Séries BAC: {', '.join(filiere['series_bac_requises'])}\n"
+                rapport += "\n"
+        
+        # Carrières alternatives
+        if recommandations.get('carrieres_alternatives'):
+            rapport += "\nCARRIÈRES ALTERNATIVES À CONSIDÉRER\n"
+            rapport += "==================================\n"
+            
+            for i, carriere in enumerate(recommandations['carrieres_alternatives'][:3], 1):
+                rapport += f"\n{i}. {carriere.nom_metier}\n"
+                rapport += f"   Secteur: {carriere.secteur_activite}\n"
+                rapport += f"   Description: {carriere.description}\n"
+                if carriere.niveau_demande_marche:
+                    rapport += f"   Demande marché: {carriere.niveau_demande_marche}\n"
+    
+    rapport += f"""
+
+CONSEILS POUR LA SUITE
+=====================
+1. Consultez les sites web des universités recommandées
+2. Assistez aux journées portes ouvertes
+3. Rencontrez des professionnels du domaine
+4. Préparez-vous aux concours d'entrée si nécessaire
+5. Gardez des options de carrières alternatives
+
+---
+Rapport généré par le Système d'Orientation Professionnelle du Bénin
+Pour plus d'informations: contactez votre conseiller d'orientation
+"""
+    
+    return rapport
 
 if __name__ == "__main__":
     main()

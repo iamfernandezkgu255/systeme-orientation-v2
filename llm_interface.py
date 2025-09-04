@@ -31,18 +31,28 @@ class LLMInterface:
         try:
             return st.secrets["openrouter"]["api_key"]
         except KeyError:
-            st.error("⚠️ Clé API OpenRouter non trouvée dans les secrets Streamlit!")
-            st.markdown("""
-            **Configuration requise :**
-            
-            Ajoutez votre clé API dans les secrets Streamlit :
-            ```toml
-            [openrouter]
-            api_key = "votre_clé_api_ici"
-            ```
-            
-            Vous pouvez obtenir une clé API sur [OpenRouter.ai](https://openrouter.ai)
-            """)
+            try:
+                st.warning("⚠️ Clé API OpenRouter non trouvée. L'application fonctionne en mode dégradé.")
+                with st.expander("Comment configurer l'API (optionnel)"):
+                    st.markdown("""
+                    **Configuration pour analyse IA avancée :**
+                    
+                    1. Obtenez une clé API sur [OpenRouter.ai](https://openrouter.ai)
+                    2. Copiez `.streamlit/secrets.toml.example` vers `.streamlit/secrets.toml`
+                    3. Ajoutez votre clé API dans le fichier :
+                    ```toml
+                    [openrouter]
+                    api_key = "votre_clé_api_ici"
+                    ```
+                    """)
+            except:
+                print("⚠️ Clé API OpenRouter non trouvée. Mode dégradé activé.")
+            return None
+        except Exception as e:
+            try:
+                st.warning(f"Erreur lors de la récupération de la clé API: {e}")
+            except:
+                print(f"Erreur lors de la récupération de la clé API: {e}")
             return None
     
     def analyser_profil(self, profil_utilisateur: Dict, recommandations: Dict) -> str:
